@@ -1,7 +1,10 @@
+/*------------------------------------
+  first section
+------------------------------------*/
 .section-one
   //background-image url('../img/backgrounds/section-1b.png')
   background-image url('../img/backgrounds/section-1.jpg')
-  height 100vh
+  height 67.1vw
   display flex
   justify-content center
   align-items center
@@ -37,4 +40,206 @@
   font-size remify(13px)
   letter-spacing 2.1px
   margin-top 40px
+
+/*------------------------------------
+  second section
+------------------------------------*/
+.relative-container
+  position relative
+  top -200px
+
+.section_two
+  height 1223px
+  background-image url('../img/backgrounds/section-2.png')
+  background-size 100% 100%
+  padding-top 321px
+
+.section_two-title
+  color #fff
+  font-size remify(40px)
+  text-align center
+  margin-bottom 114px
+  font-weight $thin
+  letter-spacing 1px
+  
+  span
+    font-weight $semibold
+
+.section_two-content
+  display flex
+  flex-wrap wrap
+  justify-content center
+  width 90%
+  max-width 819px;
+  center-block()
+
+.service
+  display flex
+  flex-direction column-reverse
+  width 172px
+  margin-right 147px
+  margin-bottom 61px
+
+.service-image
+  width 172px
+
+.service-title
+  color #fff
+  text-transform uppercase
+  text-align center
+  height 58px
+  letter-spacing 1.3px
+  line-height 1.38
+  font-weight $thin
+
+/*------------------------------------
+  third section
+------------------------------------*/
+.section_three
+  height 342px
+  background-image url('../img/backgrounds/section-3.png')
+  background-size 100% 100%
+  background-position center
+
+.section_three-gradient__mask
+  height 100%
+  width 100%
+  background linear-gradient(to right,
+    rgba(19,102,168, 0.9),
+    rgba(19,102,168, 0.6),
+    rgba(255,255,255,0))
+
+.section_three-container
+  display flex
+  align-items center
+  justify-content center
+  height 100%
+  width 100%
+
+.section_three-content__container
+  width 90%
+  
+.section_three-content
+  max-width 530px
+  color #fff
+  font-size remify(35px)
+  line-height 1.26
+  margin 0
+  .content-enlarge
+    font-size 45px
+  .content-blue
+    font-weight $thin
+    color $rerblue-three
+
+/*------------------------------------
+  fourth section
+------------------------------------*/
+.section_four
+  padding-top 132px
+  background-image url('../img/backgrounds/section-4_7.png')
+  background-position center
+  background-size cover
+
+.section_four-title
+  margin-top 0
+  text-align center
+  margin-bottom 103px
+  color $rerblue-four
+
+.section_four-content
+  display flex
+  flex-wrap wrap
+  justify-content space-between
+  max-width 844px
+  center-block()
+
+[class*='reason_']
+  width 408px
+  position relative
+  height 383px
+  background-size cover
+  display flex
+  flex-direction column
+  justify-content flex-end
+  align-items center
+  margin-bottom 31px
+  overflow hidden
+  
+.reason_
+  &one
+    background-image url('../img/reasons/reason-1.jpg')
+    &:hover
+      .reason-container
+        transform translateY(0)
+      .reason-blue_mask
+        top 0
+  
+  &two
+    background-image url('../img/reasons/reason-2.png')
+    &:hover
+      .reason-container
+        transform translateY(0)
+      .reason-blue_mask
+        top 0
+  
+  &three
+    background-image url('../img/reasons/reason-3.jpg')
+    &:hover
+      .reason-container
+        transform translateY(0)
+      .reason-blue_mask
+        top 0
+  
+  &four
+    background-image url('../img/reasons/reason-4.jpg')
+    &:hover
+      .reason-container
+        transform translateY(0)
+      .reason-blue_mask
+        top 0
+
+.reason-blue_mask
+  background linear-gradient(to top,
+    rgba(19,102,168, 1),
+    rgba(19,102,168, 0.95),
+    rgba(19,102,168, 0.4),
+    rgba(19,102,168, 0.1),
+    rgba(255,255,255,0))
+  width 100%
+  height 100%
+  position absolute
+  top 100%
+  transition 250ms top ease
     
+.reason-container
+  width 90%
+  transform translateY(71px)
+  transition 300ms transform ease
+  &:hover
+    transform translateY(0)
+  
+.reason-title
+  color #fff
+  font-size remify(19px)
+  line-height 29px
+  text-transform uppercase
+  letter-spacing 3px
+  margin-bottom 16px
+
+.reason-description
+  color #fff
+  line-height 1.36
+  letter-spacing .1px
+  font-size remify(14px)
+  width 300px
+
+/*------------------------------------
+  media queries
+------------------------------------*/
+@media only screen and (max-width 899px)
+  .service:nth-child(even)
+    margin-right 0
+  
+@media only screen and (min-width 900px)
+  .service:nth-child(3), .service:nth-child(6)
+    margin-right 0
