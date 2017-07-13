@@ -1,16 +1,17 @@
 .site-navbar
-  background white
+  background transparent
   display flex
   align-items center
-  height 78px // Change
+  height 94px // Change
   left 0
   position fixed
   top 0
   width 100%
   z-index 12
+  padding 0 60px 0 20px
 
   & + main
-    padding-top 78px // Change
+    padding-top 0 // Change
 
 .site-navbar__menu-trigger,
 .site-navbar__mobile-logo-container
@@ -21,7 +22,7 @@
 
 .site-navbar__desktop-logo-container
   img
-    width remify(150) // Change
+    width remify(216) // Change
 
 .site-navbar__menu-container
   flex-grow 1
@@ -31,15 +32,45 @@
 .site-navbar__menu
   height 100%
   display flex
-  align-items center
+  align-items flex-start
   justify-content flex-end
 
-.site-navbar__menu-link
-  color black // Change
-  font-size remify(19) // Change
+.nav_stroke-container
+  height 36px
+  width 1px
+  center-block()
+  margin-bottom 15px;
 
+.nav_stroke
+  height 50%
+  width 1px
+  background-color $rerblue-one
+  transition 300ms height, color ease
+  
+
+.site-navbar__menu-link
+  color #fff // Change
+  font-size remify(12) // Change
+  text-transform uppercase
+  letter-spacing 1.4px
+  cursor pointer
+  font-weight $thin
+  margin-right 30px
+
+  &.active
+    color #fff // Change
+    font-family 'OpenSans-Semibold'
+    
   &:hover, &.active
-    color white // Change
+    .nav_stroke
+      height 100%
+      background-color #fff
+    
+
+
+.site-navbar__menu-link:last-child
+  margin-right 0
+  
 
 @media screen and (max-width: 876px) // Change
   .site-navbar
