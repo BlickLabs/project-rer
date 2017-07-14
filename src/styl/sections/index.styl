@@ -139,6 +139,7 @@
   background-image url('../img/backgrounds/section-4_7.png')
   background-position center
   background-size cover
+  padding-bottom 136px
 
 .section_four-title
   margin-top 0
@@ -163,7 +164,7 @@
   flex-direction column
   justify-content flex-end
   align-items center
-  margin-bottom 31px
+  margin-bottom 24px
   overflow hidden
   
 .reason_
@@ -233,6 +234,126 @@
   letter-spacing .1px
   font-size remify(14px)
   width 300px
+
+/*------------------------------------
+  fifth section
+------------------------------------*/
+.section_five
+  background-image url('../img/backgrounds/section-5.png')
+  height 927px
+  background-size cover
+  background-position center
+  padding-top 118px
+
+.section_five-title
+  color #fff
+  font-size remify(40px)
+  text-align center
+  margin-top 0
+  margin-bottom 90px
+  letter-spacing 1px
+
+.section_five-container
+  display flex
+  justify-content space-between
+  max-width 1280px
+  center-block()
+
+.sector
+  height 480px
+  width 295px
+  display flex
+  flex-direction column-reverse
+  align-items flex-end
+  background-color #fff
+  position relative
+  
+  &:hover
+    .hover-sector
+      opacity 1
+
+.hover-sector
+  opacity 0
+  position absolute
+  width 100%
+  height 100%
+  background-color rgba(102,178,69,.9)
+  display flex
+  justify-content center
+  align-items center
+  flex-direction column-reverse
+  transition 300ms opacity ease
+  cursor pointer
+
+  h3
+    color #fff
+    font-size 20px
+    line-height 1.45
+    letter-spacing 1.6px
+    text-transform uppercase
+    text-align center
+
+  img
+    width 70px
+
+.sector-content  
+  height 50%
+  display flex
+  flex-direction column
+  justify-content space-between
+
+.sector-content_container
+  width 81%
+  center-block()
+
+.sector-name
+  margin-top 0
+  margin-bottom 12px
+  color $rerblue-five
+  font-size remify(20px)
+  text-transform uppercase
+  line-height 1.15
+  letter-spacing 1.6px
+  width 170px
+
+.sector-description
+  color $rerblue-four
+  font-size remify(12px)
+  line-height 1.42
+  letter-spacing .1px
+  margin 0
+
+.sector-read_more
+  height 51px
+  text-align right 0px
+  display flex
+  justify-content flex-end
+  align-items center
+  background linear-gradient(to right,
+    rgba(19,102,168, 1),
+    rgba(19,102,168, 1),
+    rgba(33,94,145,1),
+    rgba(40,80,114,1))
+
+  span
+    text-transform uppercase
+    margin-right 20px
+    color #fff
+    font-size remify(12px)
+    line-height 2.42
+    letter-spacing 1.9px
+    z-index 2
+    cursor pointer
+
+  img
+    margin-right 44px
+    width 13px
+    z-index 2
+    cursor pointer
+
+.sector-image
+  img
+    width 100%
 
 /*------------------------------------
   media queries
