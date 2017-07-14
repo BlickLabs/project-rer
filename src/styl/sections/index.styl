@@ -257,6 +257,7 @@
   display flex
   justify-content space-between
   max-width 1280px
+  flex-wrap wrap
   center-block()
 
 .sector
@@ -354,6 +355,99 @@
 .sector-image
   img
     width 100%
+
+/*------------------------------------
+  sixth section
+------------------------------------*/
+.section_six
+  background-color #FEFFFE
+  padding-top 118px
+  height 1217px
+  text-align center
+
+.section_six-title
+  font-size remify(40px)
+  color $rerblue-four
+  margin-top 0
+  margin-bottom 103px
+  text-align center
+
+.section_six-content
+  max-width 1118px
+  display flex
+  flex-wrap wrap
+  justify-content space-between
+  center-block()
+  margin-bottom 62px
+
+[class*="project_"]
+  width 362px
+  height 334px
+  background-size cover
+  margin-bottom 20px
+  display flex
+  justify-content center
+  align-items center
+  position relative
+
+.project_
+  &1
+    background-image url('../img/projects/project-1.png')
+    &:hover
+      .project-blue_mask
+        opacity .67
+  &2
+    background-image url('../img/projects/project-2.png')
+    &:hover
+      .project-blue_mask
+        opacity .67 
+  &3
+    background-image url('../img/projects/project-3.png')
+    &:hover
+      .project-blue_mask
+        opacity .67
+  &4
+    background-image url('../img/projects/project-4.png')
+    &:hover
+      .project-blue_mask
+        opacity .67
+  &5
+    background-image url('../img/projects/project-5.png')
+    &:hover
+      .project-blue_mask
+        opacity .67
+  &6
+    background-image url('../img/projects/project-6.png')
+    &:hover
+      .project-blue_mask
+        opacity .67
+
+.project-blue_mask
+  background-color #1366a8
+  width 100%
+  height 100%
+  position absolute
+  opacity 0
+  transition 300ms opacity ease
+
+.project-name
+  color #fff
+  letter-spacing 2.2px
+  text-transform uppercase
+  line-height 1.45
+  font-size remify(20px)
+  z-index 1
+
+.section_six-button
+  text-transform uppercase
+  color #fff
+  background-color #66b245
+  padding 11px 35px
+  line-height 2.23
+  border 0
+  font-size remify(13px)
+  letter-spacing 2.1px
+  cursor pointer
 
 /*------------------------------------
   media queries
