@@ -40,6 +40,10 @@
   font-size remify(13px)
   letter-spacing 2.1px
   margin-top 40px
+  cursor pointer
+  transition 250ms box-shadow ease
+  &:hover
+    box-shadow: 0px 2px 7px .6px rgba(0,0,0,0.2);
 
 /*------------------------------------
   second section
@@ -371,6 +375,7 @@
   margin-top 0
   margin-bottom 103px
   text-align center
+  font-weight $thin
 
 .section_six-content
   max-width 1118px
@@ -448,6 +453,43 @@
   font-size remify(13px)
   letter-spacing 2.1px
   cursor pointer
+  transition 200ms box-shadow ease
+  &:hover
+    box-shadow: 0px 2px 7px .6px rgba(0,0,0,0.17);
+
+.section_seven
+  height 864px
+  background-image url('../img/backgrounds/section-4_7.png')
+  background-size cover
+  background-position center
+  padding-top 108px
+
+.section_seven-title
+  font-size remify(40px)
+  color $rerblue-four
+  margin-top 0
+  margin-bottom 86px
+  text-align center
+  font-weight $thin
+
+.certifications
+  max-width 661px
+  center-block()
+  display flex
+  justify-content space-between
+
+[class*='certification']
+  img
+    width 100%
+
+.certification_
+  &1
+    width 110px
+  &2
+    width 169px
+  &3
+    width 110px
+  
 
 /*------------------------------------
   media queries
