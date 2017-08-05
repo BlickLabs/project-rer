@@ -367,6 +367,10 @@
 .sector-image
   img
     width 100%
+    
+.section-sector-hide-desktop
+  display none
+  width 50%
 
 /*------------------------------------
   sixth section
@@ -647,23 +651,29 @@ textarea::placeholder
 
 @media screen and (max-width 975px)
   .section-one
-    height 120vw
+    height 184vw
+    align-items flex-start
+    
+  .section_one-container
+    margin-top 112px
+    width 300px
     
   .section-one_title
     font-size remify(24px)
     
   .section-one_content
-    font-size remify(16px)
+    font-size remify(17px)
+    margin 29px 30px 18px 30px
     width auto
     
   .rer-button
-    margin-top 10px
+    height 33px
+    margin-top 0px
+    padding 0px
+    width 159px
     
   .relative-container
-    top -100px
-    
-  .section_two-content
-    display none
+    top -200px
     
   .section_two
     background-size cover
@@ -673,24 +683,98 @@ textarea::placeholder
   .section_two-title
     font-size remify(24px)
     
+  .section_three
+    height 279px
+    
   .section_three-content
     font-size remify(24px)
     
+  .section_three-content
+    .content-enlarge
+      font-size remify(24px)
+      
+  .section_four
+    padding-top 50px
+    
   .section_four-title
     font-size remify(24px)
+    margin-bottom 45px
+    
+  [class*='reason_']
+    height 267px
+    
+  .reason-container
+    transform translateY(0)
+    
+  .section_five
+    padding-top 70px
+    
+  .section_five-container
+    width 100%
+    justify-content center
     
   .section_five-title
     font-size remify(24px)
+    margin-bottom 50px
+    
+  .sector
+    display none
+    
+  .section-sector-hide-desktop
+    display block
+    
+  .section-sector-mobile
+    align-items center
+    display flex
+    flex-direction column
+    
+  .margin-top-35px-mobile
+    margin-top 35px
+    
+  .sector-image-size-mobile
+    width 46px
+    
+  .text-sector-mobile
+    color #fff
+    text-transform uppercase
+    
+  .section_six
+    padding-top 50px
     
   .section_six-title
     font-size remify(24px)
+    margin-bottom 50px
+    
+  .section_six-content
+    width 100%
+    
+  [class*="project_"]
+    height 161px
+    margin-bottom 6px
+    width 49%
     
   .contact_header
     padding-left 42px
     padding-right 42px
     
+  .section_six-button
+    height 33px
+    padding 0px
+    width 111px
+    
+  .section_seven
+    height 520px
+    padding-top 25px
+    
   .section_seven-title
     font-size remify(24px)
+    margin-bottom 44px
+    
+  .certifications
+    width 70%
+    
+  .certification_2
+    margin 0px 15px
     
   .contact-title
     font-size remify(20px)
@@ -700,23 +784,43 @@ textarea::placeholder
     
   .contact_body-container
     flex-direction column
-    
+
   .contact_body-column_
     &one, &two
       max-width 100%
       margin-right 0px
       
+  .text-label-input.rer-font-opensans
+    font-size remify(15px)
+    margin-bottom 0px
+
   .contact-field
     max-width 100%
     min-width 100%
-    
+
   .message
     width 100%
-    
+    height 43px
+
   .contact-field-mobile.contact-field
-    &.message
-      border-top 0px
-      border-right 0px
-      border-left 0px
-      background-color transparent
+    border-top 0px
+    border-right 0px
+    border-left 0px
+    background-color transparent
     
+  .message-mobile.message
+    border-top 0px
+    border-right 0px
+    border-left 0px
+    background-color transparent
+    
+  .section_two-content
+    flex-wrap nowrap
+    
+  .section_eight-button
+    height 34px
+    padding 0px
+    width 122px
+    
+  .text-button-submit.rer-font-opensans-light
+    font-size remify(13px)
