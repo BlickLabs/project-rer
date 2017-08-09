@@ -3,7 +3,7 @@
 ------------------------------------*/
 .section-one
   //background-image url('../img/backgrounds/section-1b.png')
-  background-image url('../img/backgrounds/section-1.jpg')
+  background-image url('../img/backgrounds/Cover_RER.png')
   height 67.1vw
   display flex
   justify-content center
@@ -51,7 +51,7 @@
 ------------------------------------*/
 .relative-container
   position relative
-  top -200px
+  top -230px
   margin-bottom -707px
   z-index 2
 
@@ -676,22 +676,77 @@ textarea::placeholder
     top -200px
     
   .section_two
+    position relative
     background-size cover
     height 600px
     padding-top 150px
     
   .section_two-title
     font-size remify(24px)
+    margin-bottom 64px
+    
+  .section_two-carousel
+    padding 0px 60px
+    
+  .section_two-carousel.slick-slide
+    margin-top 20px
+    margin-bottom 20px
+  
+  .half-circle-
+    &prev, &next
+      bottom 83px
+      position absolute
+      width 28px
+      
+  .half-circle-prev
+    left 0px
+
+  .half-circle-next
+    right 0px
+    
+  .service
+    margin-right 0px
+    margin-bottom 0px
+    
+  .section-two-content.slick-center
+    transform scale(1.5)
+    margin-top 17px
+    margin-bottom 35px
+    outline 0
+    opacity 1 !important
+    
+  .service-title.slick-slide
+    display none
+    
+  .section-two-content.slick-slide
+    margin-top 10px
+    padding-top 10px
+    opacity 0.6
+    
+  .service-image
+    height 100px
+    width 100px
+    
+  .service-title
+    font-size remify(10px)
+    height 25px
+    margin-top 5px
+    margin-bottom 0px
+
+  .service-width
+    width auto !important
     
   .section_three
     height 279px
     
   .section_three-content
-    font-size remify(24px)
+    font-size remify(26px)
+    width 81%
+    padding-left 21px
     
   .section_three-content
     .content-enlarge
-      font-size remify(24px)
+      font-size remify(29px)
       
   .section_four
     padding-top 50px
@@ -700,8 +755,45 @@ textarea::placeholder
     font-size remify(24px)
     margin-bottom 45px
     
+  .section_four-content
+    position relative
+    
   [class*='reason_']
     height 267px
+    
+  [class*='reason_'].slick-center
+    height 222px
+    filter grayscale(0%) !important
+    transform scale(1.5)
+    z-index 1
+    
+  [class*='reason_'].slick-slide
+    filter grayscale(100%)
+    margin-top 10px
+    outline 0
+    
+  .carousel-arrows
+    align-items center
+    background-color #0068b3
+    border-radius 50px
+    display flex
+    height 44px
+    justify-content center
+    position absolute
+    width 44px
+    
+  .rer-arrow-left
+    bottom -60px
+    right 0px
+    transform translateX(-110px)
+    
+  .rer-arrow-right
+    bottom -60px
+    left 0px
+    transform translateX(110px)
+    
+  .arrow-width-14px
+    width 14px
     
   .reason-container
     transform translateY(0)
@@ -824,3 +916,48 @@ textarea::placeholder
     
   .text-button-submit.rer-font-opensans-light
     font-size remify(13px)
+    
+  .reason_
+    &one
+      background-image url('../img/reasons/reason-1.jpg')
+      &:hover
+        .reason-container
+          transform translateY(0px)
+      .reason-blue_mask
+        top 0
+    
+    &two
+      background-image url('../img/reasons/reason-2.png')
+      &:hover
+        .reason-container
+          transform translateY(0px)
+      .reason-blue_mask
+        top 0
+    
+    &three
+      background-image url('../img/reasons/reason-3.jpg')
+      &:hover
+        .reason-container
+          transform translateY(0px)
+      .reason-blue_mask
+        top 0
+    
+    &four
+      background-image url('../img/reasons/reason-4.jpg')
+      &:hover
+        .reason-container
+          transform translateY(0px)
+      .reason-blue_mask
+        top 0
+          
+  .reason-container
+    padding 80px 30px 0px 20px
+    width 100%
+          
+  .reason-title
+    font-size remify(12px)
+    line-height 13px
+    
+  .reason-description
+    font-size remify(10px)
+    width auto
