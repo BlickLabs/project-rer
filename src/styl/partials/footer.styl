@@ -46,6 +46,10 @@
   
   &:hover
     color #2a97e6
+    
+.footer-menu-row
+  display flex
+  flex-direction row
 
 .footer_menu-column_two
   margin-right 20px
@@ -57,18 +61,57 @@
 @media screen and (max-width 975px)
   .site-footer
     display flex
+    height 1060px
+    padding-left 20px
+    padding-right 20px
+    padding-top 330px
+    
+  .site-footer-hide-mobile
+    display none
 
   .footer-container
     flex-direction column
+    width 100%
+    
+  .footer_menu-column_one
+    margin-right 0px
+    position relative
     
   .footer_menu
+    flex-direction row
+    justify-content space-around
+    width 100%
+    
+  .footer_menu-link
+    margin-bottom 16px
+    width auto
+    
+  .footer-menu-row
     flex-direction column
 
   .logo-footer
     width 113px
+    margin-bottom 0px
     
-  .copyright
-    display none
+  .footer-column_two
+    display flex
+    justify-content center
+    width 100%
     
-  .footer-copyright-mobile
-    display block
+  .footer_menu-column_two
+    margin-right 0px
+    
+  .footer-hr-vertical
+    background-color #0068b3
+    height 114px
+    margin 0px 20px
+    width 1px
+    
+  .copyright-center
+    margin-top 40px
+    text-align center
+    
+  .rer-logo-footer
+    position absolute
+    top -90px
+  
