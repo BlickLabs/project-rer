@@ -1,4 +1,10 @@
-<nav class="site-navbar">
+<nav class="site-navbar
+            {% if section == 'plans-services' %}navbar-blue{% endif %}
+            {% if section == 'projects' %}navbar-strong-blue{% endif %}
+            {% if section == 'only-project' %}navbar-strong-blue{% endif %}
+            {% if section == 'news' %}navbar-blue{% endif %}
+            {% if section == 'contact' %}navbar-strong-blue{% endif %}
+            {% if section == 'about' %}navbar-strong-blue{% endif %}">
   <div class="site-navbar__desktop-logo-container">
     <a href="index.html"><img class="navbar-logo-mobile" src="img/logo/rer_logo-color.png" alt="Logo RER"></a>
   </div>
@@ -16,37 +22,37 @@
         </div>
         <span>Inicio</span>
       </a>
-      <a href="plans-services.html" class="site-navbar__menu-link {% if section != 'index' %}active{% endif %}">
+      <a href="plans-services.html" class="site-navbar__menu-link {% if section == 'plans-services' %}active{% endif %}">
         <div class="nav_stroke-container">
           <div class="nav_stroke"></div>
         </div>
         <span>Planes y servicios</span>
       </a>
-      <a href="solar-benefits.html" class="site-navbar__menu-link {% if section != 'index' %}active{% endif %}">
+      <a href="solar-benefits.html" class="site-navbar__menu-link {% if section == 'solar-benefits' %}active{% endif %}">
         <div class="nav_stroke-container">
           <div class="nav_stroke"></div>
         </div>
         <span>Beneficios solares</span>
       </a>
-      <a href="projects.html" class="site-navbar__menu-link {% if section != 'index' %}active{% endif %}">
+      <a href="projects.html" class="site-navbar__menu-link {% if section == 'projects' %}active{% endif %}">
         <div class="nav_stroke-container">
           <div class="nav_stroke"></div>
         </div>
         <span>Proyectos</span>
       </a>
-      <a href="index.html" class="site-navbar__menu-link {% if section != 'index' %}active{% endif %}">
+      <a href="news.html" class="site-navbar__menu-link {% if section == 'news' %}active{% endif %}">
         <div class="nav_stroke-container">
           <div class="nav_stroke"></div>
         </div>
         <span>Noticias</span>
       </a>
-      <a href="index.html" class="site-navbar__menu-link {% if section != 'index' %}active{% endif %}">
+      <a href="about.html" class="site-navbar__menu-link {% if section == 'about' %}active{% endif %}">
         <div class="nav_stroke-container">
           <div class="nav_stroke"></div>
         </div>
         <span>Quiénes somos</span>
       </a>
-      <a href="index.html" class="site-navbar__menu-link {% if section != 'index' %}active{% endif %}">
+      <a href="contact.html" class="site-navbar__menu-link {% if section == 'contact' %}active{% endif %}">
         <div class="nav_stroke-container">
           <div class="nav_stroke"></div>
         </div>
