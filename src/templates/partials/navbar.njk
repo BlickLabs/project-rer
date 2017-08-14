@@ -6,7 +6,10 @@
             {% if section == 'contact' %}navbar-strong-blue{% endif %}
             {% if section == 'about' %}navbar-strong-blue{% endif %}">
   <div class="site-navbar__desktop-logo-container">
-    <a href="index.html"><img class="navbar-logo-mobile" src="img/logo/rer_logo-color.png" alt="Logo RER"></a>
+    <a href="index.html">
+      {% if section == 'index' %}<img class="navbar-logo-mobile" src="img/logo/rer_logo-color.png" alt="Logo RER">{% endif %}
+      {% if section != 'index' %}<img class="navbar-logo-mobile" src="img/logo/rer_logo-white.png" alt="Logo RER">{% endif %}
+    </a>
   </div>
   <div class="site-navbar__menu-trigger">
     <span class="fa fa-bars"></span>
