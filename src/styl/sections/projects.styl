@@ -1,6 +1,6 @@
 .projects-container
   padding 200px 0px 127px 0px
-  
+
 .projects-text-content
   align-items center
   display flex
@@ -10,7 +10,7 @@
   color #132c3e
   font-size remify(35px)
   margin 0px
-  
+
 .projects-description
   color #132c3e
   font-size remify(15px)
@@ -18,21 +18,50 @@
   margin 36px 0px 109px 0px
   text-align center
   width 60%
-  
+
 .project-image-container
   display flex
   flex-wrap wrap
-  
+  justify-content space-between
+
+.project
+  &-1
+    background url('../img/utils/project-1.jpg')
+
+  &-2
+    background url('../img/utils/project-2.jpg')
+
+  &-3
+    background url('../img/utils/project-3.jpg')
+
+  &-4
+    background url('../img/utils/project-4.jpg')
+
+  &-5
+    background url('../img/utils/project-2.jpg')
+
+  &-6
+    background url('../img/utils/project-1.jpg')
+
+  &-7
+    background url('../img/utils/project-4.jpg')
+
+  &-8
+    background url('../img/utils/project-3.jpg')
+
 .project-image-content
+  background-position center
+  background-repeat no-repeat
+  background-size cover
   position relative
-  width 50%
-  
-  &.slick-slide
-  
+  height 353px
+  margin-bottom 8px
+  width 49.7%
+
   &:hover
     .project-hover
       opacity 1
-  
+
 .project-hover
   align-items center
   background-color rgba(59, 122, 173, .83)
@@ -47,13 +76,13 @@
   right 0px
   transition 300ms opacity ease
   top 0px
-  
+
 .project-hover-title
   color #fff
   font-size remify(23px)
   margin 0px
   text-transform uppercase
-  
+
 .project-hover-description
   color #fff
   font-size remify(19px)
