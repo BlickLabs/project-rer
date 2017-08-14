@@ -1,0 +1,46 @@
+{% extends "partials/base.njk" %}
+
+{% block meta %}
+{% endblock %}
+
+{% block content %}
+  <div class="contact-container">
+    <h1 class="contact-tite rer-font-roboto-regular">Contacto</h1>
+    <div class="contact-content">
+      <form class="contact-form">
+        <div class="contact-form-content">
+          <div class="contact-input-content margin-right-59px">
+            <label class="contact-input-label rer-font-roboto-medium" for="contact-name">Nombre</label>
+            <input class="contact-input" type="" name="" id="contact-name">
+          </div>
+          <div class="contact-input-content">
+            <label class="contact-input-label rer-font-roboto-medium" for="contact-last-name">Apellidos</label>
+            <input class="contact-input" type="" name="" id="contact-last-name">
+          </div>
+        </div>
+        <div class="contact-form-content">
+          <div class="contact-input-content margin-right-59px">
+            <label class="contact-input-label rer-font-roboto-medium" for="contact-email">Correo electrónico</label>
+            <input class="contact-input" type="" name="" id="contact-email">
+          </div>
+          <div class="contact-input-content">
+            <label class="contact-input-label rer-font-roboto-medium" for="contact-company">Compañía / Organización</label>
+            <input class="contact-input" type="" name="" id="contact-company">
+          </div>
+        </div>
+        <div class="contact-input-content">
+          <label class="contact-input-label rer-font-roboto-medium" for="contact-message">Mensaje</label>
+          <textarea class="contact-text-area" placeholder="Escribe aquí" id="contact-message"></textarea>
+        </div>
+        <div class="contact-submit-container">
+          <input class="contact-submit rer-font-opensans" type="submit" value="Enviar" name="">
+        </div>
+      </form>
+      <div class="contact-data-content">
+        <p class="contact-data-description rer-font-opensans">Déjanos tus datos para saber si tu empresa <span class="contact-data-bold rer-font-opensans-bold">es candidato</span> para alguno de nuestros servicios</p>
+        <button class="contact-data-button rer-font-opensans">Dejar mis datos</button>
+      </div>
+    </div>
+    <div class="contact-background-bottom"></div>
+  </div>
+{% endblock %}
