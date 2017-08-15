@@ -23,8 +23,8 @@ $('.section_two-carousel').slick({
         centerPadding: '0px',
         slidesToShow: 1,
         speed: 200,
-        nextArrow: '<img class="half-circle-next" src="../../img/icons/half-circle-next.png">',
-        prevArrow: '<img class="half-circle-prev" src="../../img/icons/half-circle-prev.png">'
+        nextArrow: '<img class="half-circle-next" src="img/icons/half-circle-next.png">',
+        prevArrow: '<img class="half-circle-prev" src="img/icons/half-circle-prev.png">'
       }
     }
   ]
