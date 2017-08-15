@@ -704,10 +704,10 @@ textarea::placeholder
     
   .section-two-content.slick-center
     transform scale(1.5)
-    margin-top 17px
-    margin-bottom 35px
+    margin 17px -40px 35px -40px
     outline 0
     opacity 1 !important
+    z-index 1
     
   .service-title.slick-slide
     display none
@@ -715,17 +715,25 @@ textarea::placeholder
   .section-two-content.slick-slide
     margin-top 10px
     padding-top 10px
-    opacity 0.6
+    opacity 0.3
     
   .service-image
     height 100px
     width 100px
     
   .service-title
-    font-size remify(10px)
+    font-size remify(9px)
     height 25px
     margin-top 5px
     margin-bottom 0px
+    
+  .slick-slide
+    .service-title
+      opacity 0
+      
+  .slick-current
+    .service-title
+      opacity 1
 
   .service-width
     width auto !important

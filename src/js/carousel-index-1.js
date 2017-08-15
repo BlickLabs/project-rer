@@ -15,13 +15,16 @@ $('.section_two-carousel').slick({
     {
       breakpoint: 480,
       settings: {
+        adaptiveHeight: true,
+        variableWidth: true,
         arrows: true,
         mobileFirst: true,
         centerMode: true,
-        centerPadding: '50px',
+        centerPadding: '0px',
         slidesToShow: 1,
-        nextArrow: '<img class="half-circle-next" src="../../img/icons/half-circle-next.png">',
-        prevArrow: '<img class="half-circle-prev" src="../../img/icons/half-circle-prev.png">'
+        speed: 200,
+        nextArrow: '<img class="half-circle-next" src="img/icons/half-circle-next.png">',
+        prevArrow: '<img class="half-circle-prev" src="img/icons/half-circle-prev.png">'
       }
     }
   ]
