@@ -53,14 +53,26 @@
   background-position center
   background-repeat no-repeat
   background-size cover
+  border-bottom solid 4px #fff
   position relative
   height 353px
-  margin-bottom 8px
-  width 49.7%
+  width 50% !important
+  
+.project-image-content
+  &:nth-child(odd)
+    border-right solid 4px #fff
+    
+  &:nth-child(even)
+    border-left solid 4px #fff
 
   &:hover
     .project-hover
       opacity 1
+
+/*Section slick*/
+  .slick-slide
+    outline 0px
+/*Section slick end*/
 
 .project-hover
   align-items center
@@ -82,6 +94,9 @@
   font-size remify(23px)
   margin 0px
   text-transform uppercase
+  
+.project-hover-separator-mobile
+  display none
 
 .project-hover-description
   color #fff
@@ -91,3 +106,88 @@
 .project-image
   height auto
   width 100%
+  
+.carousel-arrows
+  align-items center
+  background-color #0068b3
+  border-radius 50px
+  display flex
+  height 44px
+  justify-content center
+  position absolute
+  width 44px
+  
+.rer-arrow-left
+  bottom -60px
+  right 46%
+  
+.rer-arrow-right
+  bottom -60px
+  left 46%
+  
+.arrow-width-14px
+  width 14px
+  
+.description-desktop
+  display block
+  
+.description-mobile
+  display none
+  
+@media screen and (max-width 780px)
+  .projects-container
+    padding 110px 0px 55px 0px
+    
+  .projects-title
+    font-size remify(24px)
+    
+  .projects-description
+    font-size remify(14px)
+    margin 20px 0px 60px 0px
+    
+  .project-image-content
+    border-bottom 5px
+    height 146px
+    
+  .project-image-content
+    &:nth-child(odd)
+      border-right solid 2px #fff
+      
+    &:nth-child(even)
+      border-left solid 2px #fff
+    
+  .project-hover
+    opacity 1
+    
+  .project-hover-title
+    font-size remify(12px)
+    letter-spacing 3px
+    line-height 15px
+    text-align center
+    
+  .project-hover-separator-mobile
+    background-color #fff
+    display block
+    height 1px
+    margin 7px 0px
+    width 15px
+    
+  .description-desktop
+    display none
+    
+  .description-mobile
+    display block
+    
+  .project-hover-description
+    font-size remify(11px)
+    line-height 12px
+    text-align center
+    margin 0px
+    
+  .rer-arrow-left
+    bottom -60px
+    right 1%
+    
+  .rer-arrow-right
+    bottom -60px
+    left 1%
