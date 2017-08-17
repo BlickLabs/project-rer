@@ -50,7 +50,7 @@
   padding-bottom 15px
   
 .contact-input
-  color #2d3746
+  color #787878
   background-color transparent
   border-top 0px
   border-right 0px
@@ -60,7 +60,7 @@
   padding-left 10px
   
 .contact-text-area
-  color #2d3746
+  color #787878
   background-color transparent
   border solid 1px #7e7e7e
   height 180px
@@ -80,6 +80,7 @@
   border none
   border-radius 1px
   color #fff
+  cursor pointer
   font-size remify(12px)
   height 37px
   letter-spacing 2px
@@ -110,12 +111,16 @@
   border none
   border-radius 1px
   color #fff
+  cursor pointer
   font-size remify(10px)
   height 37px
   letter-spacing 2px
   margin-top 30px
   text-transform uppercase
   width 180px
+  
+.sites-container
+  display none
   
 .contact-background-bottom
   background url('../img/utils/contact-bottom.jpg')
@@ -124,3 +129,80 @@
   background-size cover
   height 450px
   width 100%
+  
+@media screen and (max-width 975px)
+  .contact-container
+    background-position initial
+    margin-top 60px
+
+  .contact-content
+    background-position center
+    background-repeat no-repeat
+    background-size cover
+    flex-direction column
+    margin-top 50px
+    
+  .contact-tite
+    font-size remify(24px)
+    padding-top 60px
+    
+  .contact-form
+    background-color transparent
+    padding 0 10% 0 10%
+    
+  .contact-form-content
+    flex-direction column
+    
+  .label-required-mobile:after
+    color #106198
+    content "*"
+    font-size remify(11px)
+    margin-left 2px
+    
+  .contact-data-content
+    height 190px
+    margin 60px 0 0 30%
+    padding 0px 30px 0px 30px
+    
+  .contact-data-description
+    font-size remify(13px)
+    width auto
+    
+  .contact-data-button
+    font-size remify(11px)
+    height 30px
+    margin-top 20px
+    width 135px
+    
+  .contact-background-bottom
+    height 193px
+    
+  .sites-container
+    background-color #fff
+    display block
+    margin-top -25px
+    padding 50px 0px
+    
+  .sites-horizontal-center
+    display flex
+    justify-content center
+    
+  .sites-link
+    align-items center
+    display flex
+    flex-direction row
+    outline 0
+    
+  .margin-bottom-9px-mobile
+    margin-bottom 9px
+    
+  .sites-icon
+    height 16px
+    width 16px
+    
+  .sites-text-link
+    color #817f7f
+    font-size remify(11px)
+    letter-spacing 3px
+    margin 0px 0px 0px 5px
+    text-transform uppercase
