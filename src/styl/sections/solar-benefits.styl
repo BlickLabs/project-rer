@@ -1,6 +1,6 @@
 .solar-benefits-container
   position relative
-  
+
 .solar-benefits
   background url('../img/backgrounds/solar-benefits-1.png')
   background-size cover
@@ -11,18 +11,19 @@
   justify-content center
   padding-left 220px
   width 100%
-  
+
 .solar-benefits-title
   color #fff
   font-size remify(35px)
   margin 0px
-  
+
 .solar-benefits-description
   color #fff
   font-size remify(22px)
   line-height 28px
   margin 12px 0px 29px 0px
-  
+  max-width 530px
+
 .solar-benefits-button
   background-color #66b245
   border none
@@ -32,7 +33,7 @@
   margin 0px
   text-transform uppercase
   width 182px
-  
+
 .solar-benefits-why
   align-items center
   background url('../img/backgrounds/solar-benefits-2.png')
@@ -42,12 +43,12 @@
   height 1050px
   margin-top -110px
   padding-top 150px
-  
+
 .why-title
   color #132c3e
   font-size remify(35px)
   margin 0px
-  
+
 .why-descripcion
   color #132c3e
   font-size remify(19px)
@@ -55,111 +56,386 @@
   margin 46px 0px 77px 0px
   text-align center
   width 63%
-  
+
 .why-container
   display flex
   flex-direction row
   flex-wrap wrap
   
+.why-container-carousel
+  display none
+
 .why-content
   display flex
   flex-direction column
   margin 0px 25px
-  
+
 .why-image-container
   display flex
   justify-content center
   width 208px
-  
+
 .why-image
   height 185px
   width 185px
-  
+
 .why-content-description
   color #656565
   font-size remify(15px)
   line-height 21px
   margin 25px 0px 0px 0px
   text-align center
-  
+
 .solar-benefits-generate
   background url('../img/backgrounds/solar-benefits-3.jpg')
   background-size cover
   background-position center
-  height 815px
+  height 800px
   margin-top -234px
   padding-top 270px
   padding-left 107px
   position relative
-  
+
 .generate-title
   color #fff
+  display block
   font-size remify(35px)
   margin 0px
-  
+
+.generate-title-mobile
+  display none
+
 .generate-title-underline
   background-color #15639b
   height 1px
   margin 28px 0px
   width 98px
-  
+
 .generate-description
   color #fff
   font-size remify(18px)
   line-height 25px
   margin 0px
   width 50%
-  
+
 .generate-image-container
   bottom 0px
+  display block
   position absolute
   right 0px
-  
+
+.generate-image-container-mobile
+  display none
+
 .generate-image
   height 845px
   width 463px
-  
+
 .solar-benefits-how
   display flex
   flex-direction row
   
+.solar-bulb-container
+  display none
+
 .panel-gray
   background-color #F9F9F9
   height 1000px
   position relative
   width 720px
-  
+
 .panel-image-container
   left 0px
   position absolute
   top 261px
-  
+
 .panel-image
   height 484px
   width 591px
   
+.panel-image-footer
+  display none
+
 .how-container
   display flex
   flex-direction row
   justify-content center
   padding-top 124px
   width 100%
-  
+
 .how-content
   width 48%
-  
+
 .how-title
   color #132c3e
   font-size remify(35px)
   margin 0px 0px 41px 0px
-  
+
 .how-info-title
   color #0068b3
   font-size remify(20px)
   margin 0px
   text-transform uppercase
-  
+
 .how-info-description
   color #132c3e
   font-size remify(15px)
   margin 10px 0px 40px 0px
+
+@media screen and (max-width 780px)
+  .solar-benefits
+    height 396px
+    padding 0px 52px 0px 24px
+
+  .solar-benefits-title
+    font-size remify(24px)
+
+  .solar-benefits-description
+    font-size remify(15px)
+    line-height 20px
+
+  .solar-benefits-button
+    font-size remify(11px)
+    height 30px
+    letter-spacing 1.4px
+    width 130px
+
+  .solar-benefits-why
+    display inherit
+    height 700px
+    padding-top 110px
+
+  .why-title
+    font-size remify(24px)
+    text-align center
+
+  .why-descripcion
+    font-size remify(15px)
+    margin 20px 37px 70px 37px
+    width auto
+    
+  .why-container
+    display none
+    
+  .why-content
+    background-color #fff
+    border-top solid 2px #f7f4f4
+    box-shadow 0 2px 4px 1px rgba(0, 0, 0, 0.19)
+    margin 0px
+    position relative
+    
+  .why-content-mask
+    background-color rgba(7, 78, 131, 0.5)
+    bottom 0
+    left 0
+    opacity 1
+    position absolute
+    right 0
+    top 0
+    z-index 1
+    
+  .why-content.slick-center
+    .why-content-mask
+      opacity 0
+      
+  .why-content.slick-center
+    .read-more-container
+      z-index 1
+      
+  .why-content.slick-slide
+    transform scale(0.8)
+    
+  .why-content.slick-center
+    transform scale(1)
+    
+  .why-block-info
+    padding 18px 0px 15px 0px
+    position relative
+    
+  .why-layer-info
+    background-color #fff
+    bottom 0
+    display none
+    left 0
+    padding 20px 26px
+    position absolute
+    right 0
+    top 0
+    
+  .why-layer-title
+    color #0f3b5e
+    font-size remify(14px)
+    letter-spacing 0.9px
+    line-height 20px
+    margin 0px
+    text-align center
+    
+  .why-layer-description
+    color #0068b3
+    font-size remify(11px)
+    letter-spacing 0.9px
+    line-height 13px
+    text-align center
+    
+  .why-container-carousel
+    display block
+    
+  .why-image-container
+    width 230px
+    
+  .why-image
+    height 100px
+    width 100px
+    
+  .why-content-description
+    font-size remify(14px)
+    letter-spacing 0.9px
+    line-height 13px
+    margin 10px 0px 0px 0px
+    
+  .read-more-container
+    position relative
+    
+  .read-more-triangle
+    height 7px
+    left 0
+    margin 0 auto
+    position absolute
+    right 0
+    top -1px
+    width 10px
+    
+  .read-more-button
+    color #fff
+    background-color #0068b3
+    border none
+    border-bottom-left-radius 3px
+    border-bottom-right-radius 3px
+    font-size remify(13px)
+    height 40px
+    letter-spacing 1.8px
+    padding-top 6px
+    text-transform uppercase
+    width 100%
+    
+  .why-arrows
+    align-items center
+    background-color #0068b3
+    border-radius 50px
+    display flex
+    height 35px
+    justify-content center
+    position absolute
+    width 35px
+    
+  .why-arrow-left
+    bottom -60px
+    left 56px
+    margin 0 auto
+    right 0
+    
+  .why-arrow-right
+    bottom -60px
+    left 0
+    margin 0 auto
+    right 36px
+    
+  .why-width-14px
+    height 11px
+    width 11px
+
+  .generate-image-container
+    display none
+
+  .generate-image-container-mobile
+    background url('../img/backgrounds/solar-benefits-m.png')
+    background-position top
+    background-repeat no-repeat
+    background-size cover
+    display block
+    height 300px
+    position initial
+
+  .solar-benefits-generate
+    background url('../img/backgrounds/solar-benefits-3-mobile.png')
+    background-size cover
+    background-position center
+    height 720px
+    margin-top -120px
+    position relative
+    padding 110px 0px 0px 50px
+
+  .generate-title
+    display none
+
+  .generate-title-mobile
+    color #fff
+    display block
+    font-size remify(24px)
+    margin 0px
+
+  .generate-title-underline
+    width 60px
+
+  .generate-description
+    font-size remify(15px)
+    padding-right 34px
+    width 100%
+    
+  .solar-benefits-how
+    position relative
+    
+  .solar-bulb-container
+    align-items center
+    display flex
+    flex-direction column
+    position absolute
+    right 30px
+    top -46px
+    
+  .solar-bulb-line
+    height 50px
+    width 3px
+    
+  .solar-bulb-img
+    height auto
+    margin-top -22px
+    width 41px
+
+  .panel-gray
+    display none
+
+  .how-container
+    padding 75px 70px 0 70px
+
+  .how-content
+    width 100%
+
+  .how-title
+    font-size remify(24px)
+
+  .how-info-section
+    position relative
+
+  .how-info-line
+    background-color #0068b3
+    height 1px
+    left -50px
+    position absolute
+    top 7px
+    width 30px
+
+  .how-info-title
+    font-size remify(15px)
+
+  .how-info-description
+    font-size remify(13px)
+    line-height 20px
+
+  .panel-image-container
+    position initial
+
+  .panel-image-footer
+    display block
+    height 260px
+    width 100%
