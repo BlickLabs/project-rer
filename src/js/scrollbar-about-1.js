@@ -1,0 +1,1 @@
+$('#rer-group-scrollbar').perfectScrollbar(); 
