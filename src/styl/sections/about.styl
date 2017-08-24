@@ -40,18 +40,19 @@
   margin 21px 0px 37px 0px
   max-width 450px
 
+.about-team-anchor
+  outline 0
+
 .about-team-button
+  color #fff
+  cursor pointer
   background-color #66b245
   border none
   border-radius 2px
-  height 40px
-  outline 0 !important
-  width 162px
-
-.about-button-text
-  color #fff
   font-size remify(13px)
+  height 40px
   margin 0px
+  width 162px
 
 .about-rer-panel
   background-color #f9f9f9
@@ -77,6 +78,12 @@
 
 .about-rer-title
   text-transform uppercase
+  
+.about-rer-container
+  display block
+  
+.rer-group-scrollbar
+  display none
 
 .about-rer-description
   color #132c3e
@@ -104,6 +111,9 @@
   padding 37px 65px
   position absolute
   width 562px
+  
+.about-img-container
+  display none
 
 .rer-history-mask
   background-color rgba(0, 104, 179, .70)
@@ -170,11 +180,15 @@
 
   &-7
     background url('../img/team/member-7.jpg')
+    
+  &-8
+    background url('../img/team/member-8.jpg')
 
 .team-member-img
   background-position center
   background-repeat no-repeat
   background-size cover
+  cursor pointer
   position relative
   width 25%
 
@@ -221,11 +235,19 @@
   justify-content flex-end
   margin 0px 103px
   position relative
+  
+.about-partners-mobile
+  display none
 
 .about-partners-panel
   background-color #fafafa
   height 670px
   width 874px
+  
+.partners-img-container
+  display block
+  margin-right 0px
+  width 100%
 
 .about-partners-content
   align-items center
@@ -248,3 +270,201 @@
   font-size remify(15px)
   line-height 25px
   margin 15px 0px 0px 0px
+  
+@media screen and (max-width 780px)
+  .about-container
+    margin-top 56px
+
+  .about-content
+    padding-left 46px
+    padding-right 46px
+    padding-bottom 30px
+    
+  .about-vertical-line
+    height 440px
+    margin-right 30px
+
+  .heavy-vertical-line
+    border-radius 2px
+    height 26px
+    left 0px
+    width 3px
+
+  .about-title
+    font-size remify(24px)
+
+  .about-description
+    line-height 21px
+    margin-bottom 25px
+    
+  .about-team-button
+    font-size remify(12px)
+    height 30px
+    letter-spacing 1.8px
+    text-transform uppercase
+    width 140px
+    
+  .about-rer-panel
+    padding-top 81px
+    padding-left 0px
+    padding-bottom 0px
+    
+  .padding-left-40px-mobile
+    padding-left 40px
+    
+  .about-rer-container
+    display none
+    
+  .rer-group-scrollbar
+    display block
+    height 210px
+    margin-top 44px
+    margin-bottom 140px
+    margin-right 40px
+    overflow auto
+    position relative
+    
+  .about-rer-description
+    line-height 21px
+    padding-bottom 0px
+    padding-left 40px
+    padding-right 40px
+    
+  .margin-top-0px-mobile
+    margin-top 0px
+    
+  .about-horizontal-line
+    height 1px
+    top 125px
+    width 76px
+    
+  .heavy-horizontal-line
+    height 3px
+    width 35px
+    
+  .about-rer-content-img
+    display none
+    
+  .about-rer-history
+    bottom 0
+    left 0
+    padding 180px 40px 50px 40px
+    position relative
+    width 100%
+    
+  .about-img-container
+    display block
+    position absolute
+    right 0
+    top -60px
+    z-index 1
+    
+  .about-img
+    height 204px
+    width 276px
+    
+  .rer-history
+    line-height 21px
+    
+  .about-team-container
+    margin-top 50px
+    margin-bottom 46px
+    
+  .about-team-underline
+    margin-top 15px
+    width 40px
+    
+  .about-team-description
+    line-height 20px
+    margin-bottom 50px
+    padding 0px 50px
+    
+  .team-member-content
+    height auto
+    
+  .team-member-img
+    border-bottom solid 3px #fff
+    height 160px
+    width 50%
+    
+  .team-member-img:nth-child(odd)
+    border-right solid 2px #fff
+    
+  .team-member-img:nth-child(even)
+    border-left solid 1px #fff
+    
+  .team-member-mask
+    padding 20px 15px 0px 15px
+    
+  .team-member-name
+    font-size remify(13px)
+    letter-spacing 0.6px
+    margin-bottom 4px
+    
+  .team-member-job
+    font-size remify(11px)
+    letter-spacing 0.6px
+    
+  .team-member-separator
+    margin 9px 0px
+    width 110px
+    
+  .about-partners-container
+    display none
+    
+  .about-partners-mobile
+    display block
+    position relative
+
+  .about-partners-panel
+    background-color #f1f1f1
+    height 280px
+    position absolute
+    right 0
+    width 200px
+    z-index -1
+
+  .about-partners-img
+    height 200px
+    margin-top 44px
+    width 100%
+
+  .about-partners-content
+    flex-direction column
+    margin-top 80px
+    padding-left 45px
+    padding-right 0px
+    position relative
+    top 0
+    
+  .margin-scrollbar
+    margin-top 15px
+    margin-bottom 0px
+    
+  .about-partners-description
+    line-height 21px
+    padding-right 40px
+    
+@media screen and (max-width 1070px)
+  .about-partners-container
+    margin 0
+    
+@media screen and (max-width 870px) and (min-width 781px)
+  .about-rer-content-img
+    margin-top 40px
+    position initial
+
+  .team-member-mask
+    padding 30px
+
+  .about-partners-panel
+    height 900px
+
+  .about-partners-content
+    align-items flex-start
+    flex-direction column
+    padding-left 40px
+    padding-right 50px
+    
+  .about-partner-mobile
+    margin-top 40px
