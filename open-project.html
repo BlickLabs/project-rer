@@ -84,13 +84,83 @@
       </a>
     </div>
   </div>
-  <div class="navbar-hamburguer-visibility">
-    <div class="navbar-hamburguer">
-      <div class="align-content-hamburguer">
-        <div class="line-hamburguer-base line-hamburguer-lg"></div>
-        <div class="line-hamburguer-base line-hamburguer-lg margin-vertical-4px"></div>
-        <div class="line-hamburguer-base line-hamburguer-md"></div>
+  <div data-attribute="" class="navbar-hamburguer-visibility" onclick="showMenuHamburger()" id="hamburgerMenu">
+    <div class="navbar-hamburguer" data-attribute="">
+      <div class="align-content-hamburguer" data-attribute="">
+        <div class="line-hamburguer-base line-hamburguer-lg" data-attribute=""></div>
+        <div class="line-hamburguer-base line-hamburguer-lg margin-vertical-4px" data-attribute=""></div>
+        <div class="line-hamburguer-base line-hamburguer-md" data-attribute=""></div>
       </div>
+    </div>
+  </div>
+  <div class="hamburger-menu-container" id="menuContainer" data-attribute="">
+    <div class="hamburger-menu-header" data-attribute="">
+      <div class="" data-attribute="">
+        <a href="" data-attribute="">
+          <img class="hamburger-logo" src="img/logo/white-rer-logo.png" data-attribute="">
+        </a>
+      </div>
+      <div class="hamburger-close-container" onclick="hideMenuHamburger()">
+        <img class="hamburger-close" src="img/icons/close-menu.png">
+      </div>
+    </div>
+    <div class="hamburger-menu-body" data-attribute="">
+      <a data-attribute="" href="index.html" class="hamburger-menu-link ">
+        <div class="hamburger-link-container">
+          <div class="hamburger-stroke-container">
+            <div class="hamburger-stroke"></div>
+          </div>
+          <span>Inicio</span>
+        </div>
+      </a>
+      <a data-attribute="" href="plans-services.html" class="hamburger-menu-link ">
+        <div class="hamburger-link-container">
+          <div class="hamburger-stroke-container">
+            <div class="hamburger-stroke"></div>
+          </div>
+          <span>Planes y servicios</span>
+        </div>
+      </a>
+      <a data-attribute="" href="solar-benefits.html" class="hamburger-menu-link ">
+        <div class="hamburger-link-container">
+          <div class="hamburger-stroke-container">
+            <div class="hamburger-stroke"></div>
+          </div>
+          <span>Beneficios solares</span>
+        </div>
+      </a>
+      <a data-attribute="" href="projects.html" class="hamburger-menu-link ">
+        <div class="hamburger-link-container">
+          <div class="hamburger-stroke-container">
+            <div class="hamburger-stroke"></div>
+          </div>
+          <span>Proyectos</span>
+        </div>
+      </a>
+      <a data-attribute="" href="news.html" class="hamburger-menu-link ">
+        <div class="hamburger-link-container">
+          <div class="hamburger-stroke-container">
+            <div class="hamburger-stroke"></div>
+          </div>
+          <span>Noticias</span>
+        </div>
+      </a>
+      <a data-attribute="" href="about.html" class="hamburger-menu-link ">
+        <div class="hamburger-link-container">
+          <div class="hamburger-stroke-container">
+            <div class="hamburger-stroke"></div>
+          </div>
+          <span>Quiénes somos</span>
+        </div>
+      </a>
+      <a data-attribute="" href="contact.html" class="hamburger-menu-link ">
+        <div class="hamburger-link-container">
+          <div class="hamburger-stroke-container">
+            <div class="hamburger-stroke"></div>
+          </div>
+          <span>Contacto</span>
+        </div>
+      </a>
     </div>
   </div>
 </nav>
@@ -231,43 +301,48 @@
   </div>
 
       </main>
-      <footer class="site-footer  site-footer-hide-mobile">
+      <footer class="site-footer ">
   <div class="footer-container">
     <div class="footer-column_one">
-      <img src="img/logo/rer_logo-white.png" alt="" class="logo-footer">
-      <p class="copyright rer-font-opensans-light show-desktop hide-mobile">© Copyright, RER 2017</p>
+      <a class="rer-logo" href="#">
+        <img class="logo-footer" src="img/logo/white-rer-logo.png" alt="Logo RER">
+      </a>
+      <a class="more-seo" href="http://www.getmore.mx">
+        <img src="img/icons/favicon-more.png" alt="M CO.">
+      </a>
+      <p class="copyright rer-font-opensans">© Copyright, RER 2017</p>
     </div>
     <div class="footer-column_two">
       <div class="footer_menu">
         <div class="footer_menu-column_one">
-          <a href="" class="footer_menu-link rer-font-opensans-footer">Planes y servicios</a>
-          <a href="" class="footer_menu-link rer-font-opensans-footer">Beneficios solares</a>
-          <a href="" class="footer_menu-link rer-font-opensans-footer">Proyectos</a>
-          <a href="" class="footer_menu-link rer-font-opensans-footer">Noticias</a>
+          <a class="rer-logo-mobile" href="#">
+            <img class="logo-footer" src="img/logo/white-rer-logo.png" alt="Logo RER">
+          </a>
+          <a href="plans-services.html" class="footer_menu-link rer-font-opensans-footer ">Planes y servicios</a>
+          <a href="solar-benefits.html" class="footer_menu-link rer-font-opensans-footer ">Beneficios solares</a>
+          <a href="projects.html" class="footer_menu-link rer-font-opensans-footer ">Proyectos</a>
+          <a href="news.html" class="footer_menu-link  rer-font-opensans-footer ">Noticias</a>
         </div>
+        <div class="footer-separator"></div>
         <div class="footer-menu-row">
           <div class="footer_menu-column_two">
-            <a href="" class="footer_menu-link rer-font-opensans-footer">Quiénes somos</a>
-            <a href="" class="footer_menu-link rer-font-opensans-footer">Equipo</a>
-            <a href="" class="footer_menu-link rer-font-opensans-footer">Contacto</a>
+            <a href="about.html" class="footer_menu-link rer-font-opensans-footer ">Quiénes somos</a>
+            <a href="contact.html" class="footer_menu-link rer-font-opensans-footer ">Contacto</a>
           </div>
           <div class="footer_menu-column_three">
             <a href="">
-              <img class="icon" src="img/li-icon.svg" alt="">
+              <img class="icon icon-size" src="img/fb-icon.svg" alt="facebook">
             </a>
             <a href="">
-              <img src="img/fb-icon.svg" alt="">
+              <img class="icon-size" src="img/li-icon.svg" alt="in">
             </a>
           </div>
         </div>
       </div>
     </div>
-    <div class="hide-desktop show-mobile">
-      <p class="copyright rer-font-opensans-light">© Copyright, RER 2017</p>
-    </div>
+    <p class="copyright-mobile rer-font-opensans">© Copyright, RER 2017</p>
   </div>
 </footer>
-
     </div>
     
     
