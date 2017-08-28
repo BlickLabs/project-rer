@@ -1,36 +1,42 @@
-<footer class="site-footer {% if section == 'index' %}site-footer-index{% endif %} site-footer-hide-mobile">
+<footer class="site-footer {% if section == 'index' %}site-footer-index{% endif %}">
   <div class="footer-container">
     <div class="footer-column_one">
-      <img src="img/logo/rer_logo-white.png" alt="" class="logo-footer">
-      <p class="copyright rer-font-opensans-light show-desktop hide-mobile">© Copyright, RER 2017</p>
+      <a class="rer-logo" href="#">
+        <img class="logo-footer" src="img/logo/white-rer-logo.png" alt="Logo RER">
+      </a>
+      <a class="more-seo" href="http://www.getmore.mx">
+        <img src="img/icons/favicon-more.png" alt="M CO.">
+      </a>
+      <p class="copyright rer-font-opensans">© Copyright, RER 2017</p>
     </div>
     <div class="footer-column_two">
       <div class="footer_menu">
         <div class="footer_menu-column_one">
-          <a href="" class="footer_menu-link rer-font-opensans-footer">Planes y servicios</a>
-          <a href="" class="footer_menu-link rer-font-opensans-footer">Beneficios solares</a>
-          <a href="" class="footer_menu-link rer-font-opensans-footer">Proyectos</a>
-          <a href="" class="footer_menu-link rer-font-opensans-footer">Noticias</a>
+          <a class="rer-logo-mobile" href="#">
+            <img class="logo-footer" src="img/logo/white-rer-logo.png" alt="Logo RER">
+          </a>
+          <a href="plans-services.html" class="footer_menu-link rer-font-opensans-footer {% if section == 'plans-services' %}active{% endif %}">Planes y servicios</a>
+          <a href="solar-benefits.html" class="footer_menu-link rer-font-opensans-footer {% if section == 'solar-benefits' %}active{% endif %}">Beneficios solares</a>
+          <a href="projects.html" class="footer_menu-link rer-font-opensans-footer {% if section == 'projects' %}active{% endif %}">Proyectos</a>
+          <a href="news.html" class="footer_menu-link  rer-font-opensans-footer {% if section == 'news' %}active{% endif %}">Noticias</a>
         </div>
+        <div class="footer-separator"></div>
         <div class="footer-menu-row">
           <div class="footer_menu-column_two">
-            <a href="" class="footer_menu-link rer-font-opensans-footer">Quiénes somos</a>
-            <a href="" class="footer_menu-link rer-font-opensans-footer">Equipo</a>
-            <a href="" class="footer_menu-link rer-font-opensans-footer">Contacto</a>
+            <a href="about.html" class="footer_menu-link rer-font-opensans-footer {% if section == 'about' %}active{% endif %}">Quiénes somos</a>
+            <a href="contact.html" class="footer_menu-link rer-font-opensans-footer {% if section == 'contact' %}active{% endif %}">Contacto</a>
           </div>
           <div class="footer_menu-column_three">
             <a href="">
-              <img class="icon" src="img/li-icon.svg" alt="">
+              <img class="icon icon-size" src="img/fb-icon.svg" alt="facebook">
             </a>
             <a href="">
-              <img src="img/fb-icon.svg" alt="">
+              <img class="icon-size" src="img/li-icon.svg" alt="in">
             </a>
           </div>
         </div>
       </div>
     </div>
-    <div class="hide-desktop show-mobile">
-      <p class="copyright rer-font-opensans-light">© Copyright, RER 2017</p>
-    </div>
+    <p class="copyright-mobile rer-font-opensans">© Copyright, RER 2017</p>
   </div>
 </footer>
