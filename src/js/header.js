@@ -32,3 +32,20 @@ window.addEventListener('scroll', function(e) {
   }
   ticking = true;
 });
+
+window.addEventListener('click', function(e) {
+  if (!e.target.dataset.hasOwnProperty('attribute')) {
+    document.querySelector('#menuContainer').style.width = '0%';
+    document.querySelector('#hamburgerMenu').style.display = 'inline';
+  }
+});
+
+function hideMenuHamburger () {
+  document.querySelector('#menuContainer').style.width = '0%';
+  document.querySelector('#hamburgerMenu').style.display = 'inline';
+}
+
+function showMenuHamburger () {
+  document.querySelector('#menuContainer').style.width = '85%';
+  document.querySelector('#hamburgerMenu').style.display = 'none';
+}
