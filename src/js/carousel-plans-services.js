@@ -4,7 +4,7 @@ $('.solar-images-carousel').slick({
   slidesToShow: 3,
   responsive: [
     {
-      breakpoint: 768,
+      breakpoint: 780,
       settings: {
         arrows: true,
         centerMode: true,
