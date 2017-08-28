@@ -25,7 +25,8 @@
   color #132c3e
   font-size remify(15px)
   line-height 22px
-  padding 55px 295px 80px 112px
+  padding 100px 295px 80px 112px
+  text-align justify
   
 .img-plans-mobile
   display none
@@ -47,7 +48,7 @@
   background-size cover
   margin -50px 0px 0px 112px
   padding 55px 70px
-  position absolute
+  position relative
   width 43%
   z-index 1
   
@@ -90,7 +91,6 @@
   background-size 100% 80%
   display flex
   flex-direction column
-  margin-top 200px
   
 .solar-services-content-mobile
   display none
@@ -120,12 +120,15 @@
   
 .solar-image-description
   color #656565
-  font-size remify(15px)
+  font-size remify(12px)
   height 63px
   line-height 21px
   margin 15px 0px 0px 0px
   text-align center
   text-transform uppercase
+  
+.margin-top-10px
+  margin-top 10px
   
 .margin-top-75px
   margin-top 75px
@@ -482,7 +485,6 @@
     &-10
       height auto
       width 33%
-
     
   .solar-image-container
     align-items center
@@ -518,6 +520,7 @@
     align-items center
     background-color #074d7f
     border-radius 50px
+    cursor pointer
     display flex
     height 35px
     justify-content center
@@ -689,3 +692,53 @@
     
   .margin-left-7px-mobile
     margin-left 7px
+    
+@media screen and (min-width 1078px ) and (max-width 1996px)
+  .solar-images-group
+    width 100%
+    
+@media screen and (min-width 781px) and (max-width 1077px)
+  .solar-images-group
+    max-width 430px
+    width 100%
+    
+  .plans-services-target
+    width 70%
+    
+  .img-plans
+    height auto
+    width 390px
+    
+  .description-plans-services
+    padding-right 30%
+    padding-left 60px
+    
+  .adoption-info-row
+    padding-right 30px
+    
+  .adoption-table
+    padding 60px 40px
+    
+  .title-panel
+    font-size remify(18px)
+    
+  .description-panel
+    font-size remify(13px)
+
+  .graphic-content
+    display flex
+    flex-direction column
+    padding-left 70px
+    width 100%
+    
+  .graphic-triangle-info
+    transform scale(0.8)
+    
+@media screen and (min-width 440px) and (max-width 779px)
+  .save-money-container
+    display flex
+    justify-content center
+    
+  .adoption-info-row
+    margin 0 20% 0 20%
+    
