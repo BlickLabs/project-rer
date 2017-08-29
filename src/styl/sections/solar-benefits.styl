@@ -70,7 +70,8 @@
 .why-content
   display flex
   flex-direction column
-  margin 0px 25px
+  margin 0px 20px
+  position relative
 
 .why-image-container
   display flex
@@ -78,14 +79,52 @@
   width 208px
 
 .why-image
-  height 185px
-  width 185px
+  height 160px
+  width 160px
 
 .why-content-description
   color #656565
-  font-size remify(15px)
+  font-size remify(13px)
   line-height 21px
   margin 25px 0px 0px 0px
+  text-align center
+  
+.why-content-hover
+  display none
+  bottom -140px
+  position: absolute
+  
+.why-content:hover
+  .why-content-hover
+    display block
+    
+.why-line-container-hover
+  display flex
+  justify-content center
+  
+.why-line-hover
+  background-color #1b68a9
+  height 1px
+  position relative
+  width 90%
+  
+.why-triangle-hover
+  border-left 5px solid transparent
+  border-right 5px solid transparent
+  border-top 5px solid #1b68a9
+  height 0
+  left 0
+  margin 0 auto
+  position absolute
+  right 0
+  width 0
+  
+.why-description-hover
+  color #656565
+  font-size remify(12px)
+  letter-spacing 0.1px
+  line-height 15px
+  margin 20px 0px 0px 0px
   text-align center
 
 .solar-benefits-generate
@@ -139,6 +178,16 @@
   
 .solar-bulb-container
   display none
+  
+.bulb-container-desktop
+  display block
+  left -80px
+  position absolute
+  top 24px
+  
+.bulb-img-desktop
+  height 90.9px
+  width 50.8px
 
 .panel-gray
   background-color #F9F9F9
@@ -167,6 +216,9 @@
 
 .how-content
   width 48%
+  
+.how-title-container
+  position relative
 
 .how-title
   color #132c3e
@@ -400,6 +452,9 @@
     right 30px
     top -46px
     
+  .bulb-container-desktop
+    display none
+    
   .solar-bulb-line
     height 50px
     width 3px
@@ -444,5 +499,96 @@
 
   .panel-image-footer
     display block
-    height 260px
+    height auto
     width 100%
+    
+@media screen and (min-width 1450px)
+  .solar-benefits-generate
+    height 60vw
+    
+  .generate-image
+    height 64vw
+    width 580px
+    
+  .solar-benefits-generate
+    padding-top 470px
+    
+@media screen and (min-width 781px) and (max-width 1100px)
+  .solar-benefits-generate
+    height 740px
+    padding-left 70px
+    
+  .generate-title
+    max-width 345px
+    
+  .generate-image-container
+    bottom auto
+    top 0px
+    
+  .generate-image
+    height 410px
+    width auto
+    
+  .generate-description
+    width 90%
+    
+@media screen and (min-width 781px) and (max-width 1030px)
+  .solar-benefits-generate
+    margin-top -90px
+
+  .why-container
+    justify-content center
+    max-width 500px
+    
+  .why-content
+    margin-bottom 20px
+    
+  .why-content-hover
+    background-color #fff
+    bottom 60px
+    
+@media screen and (min-width 980px) and (max-width 1150px)
+  .how-container
+    width 70%
+    
+@media screen and (min-width 781px) and (max-width 979px)
+  .panel-image-container
+    top 0
+    
+  .panel-image
+    height 350px
+    width auto
+    
+@media screen and (min-width 781px) and (max-width 940px)
+  .bulb-container-desktop
+    left 0
+    top -126px
+    
+@media screen and (min-width 320px) and (max-width 352px)
+  .solar-benefits-generate
+    height 230vw
+    
+@media screen and (min-width 353px) and (max-width 370px)
+  .solar-benefits-generate
+    height 230vw
+    
+@media screen and (min-width 369px) and (max-width 780px)
+  .solar-benefits-generate
+    background-position top
+    
+@media screen and (min-width 371px) and (max-width 780px)
+  .solar-bulb-container
+    top 0px
+    
+@media screen and (min-width 450px) and (max-width 780px)
+  .solar-benefits-generate
+    height 630px
+    padding-top 170px
+    
+@media screen and (min-width 371px) and (max-width 405px)
+  .solar-benefits-generate
+    height 660px
+    
+@media screen and (min-width 452px) and (max-width 710px)
+  .how-title
+    max-width 215px

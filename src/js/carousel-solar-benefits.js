@@ -4,7 +4,7 @@ $('.why-container-carousel').slick({
   slidesToShow: 3,
   responsive: [
     {
-      breakpoint: 768,
+      breakpoint: 780,
       settings: {
         arrows: true,
         centerMode: true,
@@ -23,10 +23,13 @@ $('.why-container-carousel').slick({
         centerPadding: '40px',
         infinite: true,
         slidesToShow: 1,
-        nextArrow: '<div class="why-arrows why-arrow-left"><img class="why-width-14px" src="img/icons/right-arrow.png"></div>',
-        prevArrow: '<div class="why-arrows why-arrow-right"><img class="why-width-14px" src="img/icons/left-arrow.png"></div>',
+        nextArrow: '<div class="why-arrows why-arrow-left" onclick="resetValues()"><img class="why-width-14px" src="img/icons/right-arrow.png"></div>',
+        prevArrow: '<div class="why-arrows why-arrow-right" onclick="resetValues()"><img class="why-width-14px" src="img/icons/left-arrow.png"></div>',
         variableWidth: true
       }
     }
   ]
+});
+$('.why-container-carousel').on('swipe', function(event, slick, direction){
+  resetValues();
 });

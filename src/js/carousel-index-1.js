@@ -6,10 +6,16 @@ $('.section_two-carousel').slick({
     {
       breakpoint: 768,
       settings: {
-        arrows: false,
+        adaptiveHeight: true,
+        variableWidth: true,
+        arrows: true,
+        mobileFirst: true,
         centerMode: true,
-        centerPadding: '40px',
-        slidesToShow: 3
+        centerPadding: '0px',
+        slidesToShow: 1,
+        speed: 200,
+        nextArrow: '<img class="half-circle-next" src="img/icons/half-circle-next.png">',
+        prevArrow: '<img class="half-circle-prev" src="img/icons/half-circle-prev.png">'
       }
     },
     {
@@ -24,7 +30,7 @@ $('.section_two-carousel').slick({
         slidesToShow: 1,
         speed: 200,
         nextArrow: '<img class="half-circle-next" src="img/icons/half-circle-next.png">',
-        prevArrow: '<img class="half-circle-prev" src="img/icons/half-circle-prev.png">'
+        prevArrow: '<img class="half-circle-prev" src="img/icons/half-circle-prev.png">',
       }
     }
   ]
