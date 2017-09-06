@@ -175,13 +175,25 @@
   align-items center
   margin-bottom 13px
   overflow hidden
+
+.reason-translatey-one
+  transform translateY(188px)
+
+.reason-translatey-two
+  transform translateY(188px)
+
+.reason-translatey-three
+  transform translateY(174px)
+
+.reason-translatey-four
+  transform translateY(129px)
   
 .reason_
   &one
     background-image url('../img/reasons/reason-1.jpg')
     &:hover
       .reason-container
-        transform translateY(-13px)
+        transform translateY(0px)
       .reason-blue_mask
         top 0
   
@@ -189,7 +201,7 @@
     background-image url('../img/reasons/reason-2.png')
     &:hover
       .reason-container
-        transform translateY(-13px)
+        transform translateY(0px)
       .reason-blue_mask
         top 0
   
@@ -197,7 +209,7 @@
     background-image url('../img/reasons/reason-3.jpg')
     &:hover
       .reason-container
-        transform translateY(-13px)
+        transform translateY(-17px)
       .reason-blue_mask
         top 0
   
@@ -205,17 +217,12 @@
     background-image url('../img/reasons/reason-4.jpg')
     &:hover
       .reason-container
-        transform translateY(-13px)
+        transform translateY(-60px)
       .reason-blue_mask
         top 0
 
 .reason-blue_mask
-  background linear-gradient(to top,
-    rgba(19,102,168, 1),
-    rgba(19,102,168, 0.95),
-    rgba(19,102,168, 0.4),
-    rgba(19,102,168, 0.1),
-    rgba(255,255,255,0))
+  background rgba(19,102,168, 0.85)
   width 100%
   height 100%
   position absolute
@@ -224,18 +231,17 @@
 
 .reason-container
   width 90%
-  transform translateY(55px)
   transition 300ms transform ease
   &:hover
     transform translateY(0)
   
 .reason-title
   color #fff
-  font-size remify(14px)
-  line-height 20px
+  font-size remify(12px)
+  line-height 17px
   text-transform uppercase
-  letter-spacing 3px
-  margin-bottom 16px
+  letter-spacing 2px
+  margin-bottom 10px
 
 .reason-description
   color #fff
@@ -1089,17 +1095,21 @@ textarea::placeholder
           transform translateY(0px)
       .reason-blue_mask
         top 0
+        
+  .reason-blue_mask
+    background rgba(19,102,168, 0.85)
           
   .reason-container
-    padding 80px 30px 0px 20px
+    padding 40px 20px 0px 20px
     width 100%
           
   .reason-title
-    font-size remify(12px)
-    line-height 13px
+    font-size remify(8px)
+    line-height 10px
+    margin-bottom 0
     
   .reason-description
-    font-size remify(10px)
+    font-size remify(8px)
     width auto
     
 @media screen and (min-width 1450px)

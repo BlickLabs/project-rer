@@ -201,25 +201,33 @@
 .team-member-mask
   background-color rgba(7, 78, 129, .8)
   bottom 0px
+  display flex
+  flex-direction column
+  justify-content center
   left 0px
   position absolute
   right 0px
   transition 300ms opacity ease
   top 0px
   opacity 0
-  padding 68px 52px
+  padding 0 42px
 
 .team-member-name
   color #fff
   font-size remify(15px)
-  margin 0px
+  margin 0 0 4px 0
   text-transform uppercase
 
 .team-member-job
   color #fff
-  font-size remify(12px)
+  font-size remify(11px)
   margin 0px
   text-transform uppercase
+  
+.team-member-email
+  color #fff
+  font-size remify(11px)
+  margin 4px 0 0 0
 
 .team-member-separator
   background-color #fff
@@ -386,7 +394,7 @@
     
   .team-member-img
     border-bottom solid 3px #fff
-    height 160px
+    height 200px
     width 50%
     
   .team-member-img:nth-child(odd)
@@ -396,7 +404,7 @@
     border-left solid 1px #fff
     
   .team-member-mask
-    padding 20px 15px 0px 15px
+    padding 0px 15px 0px 15px
     
   .team-member-name
     font-size remify(13px)
@@ -451,13 +459,24 @@
   .about-partners-container
     margin 0
     
+@media screen and (min-width 871px) and (max-width 899px)
+  .team-member-mask
+    padding 0 30px
+    
+@media screen and (min-width 667px) and (max-width 780px)
+  .team-member-img
+    height 300px
+
+  .team-member-mask
+    padding 0 50px
+    
 @media screen and (max-width 870px) and (min-width 781px)
   .about-rer-content-img
     margin-top 40px
     position initial
 
   .team-member-mask
-    padding 30px
+    padding 0 30px
 
   .about-partners-panel
     height 900px
