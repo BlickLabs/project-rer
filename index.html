@@ -1439,11 +1439,11 @@
     <div class="section_six-content">
       <div class="project_1">
         <div class="project-blue_mask"></div>
-        <h3 class="project-name rer-font-opensans">Conceptos</h3>
+        <h3 class="project-name rer-font-opensans">A&A<br>Industries</h3>
       </div>
       <div class="project_2">
         <div class="project-blue_mask"></div>
-        <h3 class="project-name rer-font-opensans">Aerzen usa <br>corporation</h3>
+        <h3 class="project-name rer-font-opensans">Metales<br>Heyco</h3>
       </div>
       <div class="project_3">
         <div class="project-blue_mask"></div>
@@ -1451,15 +1451,15 @@
       </div>
       <div class="project_4">
         <div class="project-blue_mask"></div>
-        <h3 class="project-name rer-font-opensans">Fezco</h3>
+        <h3 class="project-name rer-font-opensans">Walworth</h3>
       </div>
       <div class="project_5">
         <div class="project-blue_mask"></div>
-        <h3 class="project-name rer-font-opensans">Aceros turia</h3>
+        <h3 class="project-name rer-font-opensans">Aceros Turia</h3>
       </div>
       <div class="project_6">
         <div class="project-blue_mask"></div>
-        <h3 class="project-name rer-font-opensans">Boscof's</h3>
+        <h3 class="project-name rer-font-opensans">American<br>Power Net</h3>
       </div>
     </div>
     <a href="projects.html">
@@ -1490,16 +1490,16 @@
         <img src="img/contact-triangle.png" alt="">
       </div>
       <div class="contact_body">
-        <div class="contact_body-container">
+        <form class="contact_body-container" name="candidate-form" method="permisos" action="">
           <div class="contact_body-column_one">
             <label class="rer-font-opensans text-label-input" name="nombre-completo" for="full-name">Nombre completo</label>
-            <input class="contact-field contact-field-mobile" type="text" id="full-name">
+            <input class="contact-field contact-field-mobile" type="text" id="full-name" name="candidatename" required>
             <label class="rer-font-opensans text-label-input" for="email">Correo electrónico / Teléfono</label>
-            <input class="contact-field contact-field-mobile" type="text" name="correo-tel" id="email">
+            <input class="contact-field contact-field-mobile" type="text" name="candidateemail" id="email" required>
           </div>
           <div class="contact_body-column_two">
             <label class="rer-font-opensans text-label-input" for="message">Mensaje</label>
-            <textarea class="message message-mobile" name="message" id="message" cols="30" rows="10" placeholder="Escribe aquí..."></textarea>
+            <textarea class="message message-mobile" name="candidatemessage" id="message" cols="30" rows="10" placeholder="Escribe aquí..." required></textarea>
             <div class="button-container">
               <button class="section_eight-button rer-font-opensans">
                 <span class="rer-font-opensans-light text-button-submit">Enviar</span>
@@ -1507,7 +1507,7 @@
               </button>
             </div>
           </div>
-        </div>
+        </form>
       </div>
     </div>
   </div>
