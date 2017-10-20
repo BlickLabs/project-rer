@@ -177,13 +177,13 @@
   overflow hidden
 
 .reason-translatey-one
-  transform translateY(188px)
+  transform translateY(160px)
 
 .reason-translatey-two
   transform translateY(188px)
 
 .reason-translatey-three
-  transform translateY(174px)
+  transform translateY(188px)
 
 .reason-translatey-four
   transform translateY(147px)
@@ -193,7 +193,7 @@
     background-image url('../img/reasons/reason-1.jpg')
     &:hover
       .reason-container
-        transform translateY(0px)
+        transform translateY(-29px)
       .reason-blue_mask
         top 0
   
@@ -209,7 +209,7 @@
     background-image url('../img/reasons/reason-3.jpg')
     &:hover
       .reason-container
-        transform translateY(-17px)
+        transform translateY(-5px)
       .reason-blue_mask
         top 0
   
@@ -508,32 +508,32 @@
 
 .project_
   &1
-    background-image url('../img/projects/project-1.jpg')
+    background-image url('../img/projects/a-and-a.jpg')
     &:hover
       .project-blue_mask
         opacity .67
   &2
-    background-image url('../img/projects/project-2.jpg')
+    background-image url('../img/projects/heyco-metals.jpg')
     &:hover
       .project-blue_mask
         opacity .67 
   &3
-    background-image url('../img/projects/project-3.jpg')
+    background-image url('../img/projects/mexlam.jpg')
     &:hover
       .project-blue_mask
         opacity .67
   &4
-    background-image url('../img/projects/project-4.jpg')
+    background-image url('../img/projects/walworth.jpg')
     &:hover
       .project-blue_mask
         opacity .67
   &5
-    background-image url('../img/projects/project-5.jpg')
+    background-image url('../img/projects/turia.jpg')
     &:hover
       .project-blue_mask
         opacity .67
   &6
-    background-image url('../img/projects/project-6.jpg')
+    background-image url('../img/projects/american-power-net.jpg')
     &:hover
       .project-blue_mask
         opacity .67
@@ -711,6 +711,12 @@ textarea::placeholder
   
   &:hover
     box-shadow: 0px 2px 7px .6px rgba(0,0,0,0.17);
+    
+label.error
+  font-family 'OpenSans'
+  font-size remify(14px)
+  font-weight 400
+  padding-bottom 30px
 
 /*------------------------------------
   media queries
@@ -923,6 +929,9 @@ textarea::placeholder
   .sector
     display none
     
+  .remodal-wrapper
+    padding 10px
+    
   .remodal
     background-color rgba(21, 45, 62, .83)
     height auto
@@ -933,10 +942,13 @@ textarea::placeholder
     right 0px
     
   .sector-mask-modal
-    background-color rgba(21, 45, 62, .93)
+    background-color rgba(21, 45, 62, .97)
+    
+  .sector-modal-container
+    padding 30px
     
   .sector-mobile
-    height 400px
+    height 390px
     width 295px
     display flex
     flex-direction column-reverse
@@ -949,26 +961,30 @@ textarea::placeholder
     letter-spacing 1.6px
     margin 25px 0px
     
+  .sector-scrollbar
+    height 195px
+    
   .modal-sector-description
     font-size remify(11px)
     line-height 16px
     letter-spacing 0.1px
     
   .sectors-arrows
-    height 35px
-    width 35px
+    height 30px
+    width 30px
     
   .sectors-arrow-left
-    bottom -50px
+    bottom -15px
     left 56px
     margin 0 auto
     right 0
     
   .sectors-arrow-right
-    bottom -50px
+    bottom -15px
     left 0
     margin 0 auto
     right 36px
+    z-index 1
     
   .sectors-width
     height 14px
