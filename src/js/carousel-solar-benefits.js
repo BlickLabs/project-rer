@@ -30,6 +30,3 @@ $('.why-container-carousel').slick({
     }
   ]
 });
-$('.why-container-carousel').on('swipe', function(event, slick, direction){
-  resetValues();
-});
