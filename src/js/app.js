@@ -11,7 +11,7 @@ $('form[name="contact-form"]').validate({
    contactlastname: "Por favor, introduce tu Apellido.",
    contactemail: "Por favor, introduce un Correo o Teléfono.",
    contactcompany: "Por favor, introduce tu Compañia u Organización",
-   contactmessage: "Por favor, escriba su Mensaje"
+   contactmessage: "Por favor, escribe tu Mensaje"
   },
   submitHandler: function(form) {
    var data = $('form[name="contact-form"]').serialize();
@@ -43,13 +43,13 @@ $('form[name="candidate-form"]').validate({
   messages: {
    candidatename: "Por favor introduce tu Nombre.",
    candidateemail: "Por favor, introduce un Correo o Teléfono.",
-   candidatemessage: "Por favor, escriba su Mensaje"
+   candidatemessage: "Por favor, escribe tu Mensaje"
   },
   submitHandler: function(form) {
    var data = $('form[name="candidate-form"]').serialize();
    console.log(data);
    $.ajax({
-     url: 'http://integrations.blick.mx/rer/candidate/',
+     url: 'http://integrations.blick.mx/rer/email/homepage',
      method: 'POST',
      data: data
    }).done(function(data) {
