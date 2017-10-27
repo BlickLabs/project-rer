@@ -97,11 +97,12 @@
 .about-rer-content-img
   position absolute
   top 202px
-  right -400px
+  right -540px
 
 .about-rer-img
   height auto
-  width 472px
+  max-width 590px
+  width 100%
 
 .about-rer-history
   background url('../img/backgrounds/section-5.jpg')
@@ -486,6 +487,60 @@
     flex-direction column
     padding-left 40px
     padding-right 50px
-    
+
   .about-partner-mobile
     margin-top 40px
+
+@media screen and (min-width 1230px) and (max-width 1300px)
+  .about-rer-content-img
+    left 670px
+    right auto
+
+  .about-rer-img
+    width 530px
+
+@media screen and (min-width 1160px) and (max-width 1229px)
+  .about-rer-content-img
+    left 670px
+    right auto
+
+  .about-rer-img
+    width 460px
+
+@media screen and (min-width 1080px) and (max-width 1159px)
+  .about-rer-content-img
+    left 670px
+    right auto
+
+  .about-rer-img
+    width 385px
+
+@media screen and (min-width 1000px) and (max-width 1079px)
+  .about-rer-content-img
+    left 670px
+    right auto
+
+  .about-rer-img
+    width 310px
+
+@media screen and (min-width 950px) and (max-width 999px)
+  .about-rer-content-img
+    left 670px
+    right auto
+
+  .about-rer-img
+    width 250px
+
+@media screen and (min-width 871px) and (max-width 949px)
+  .about-rer-content-img
+    margin-top 40px
+    position initial
+    
+@media screen and (min-width 1380px) and (max-width 1400px)
+  .about-rer-img
+    width 580px
+    
+@media screen and (min-width 1401px)
+  .about-rer-img
+    max-width auto
+    width 100%
