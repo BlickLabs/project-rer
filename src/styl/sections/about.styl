@@ -93,15 +93,19 @@
   line-height 25px
   margin 44px 0px 0px 0px
   max-width 490px
+  
+.about-rer-content
+  position relative
 
 .about-rer-content-img
   position absolute
   top 202px
-  right -400px
+  right -540px
 
 .about-rer-img
   height auto
-  width 472px
+  max-width 590px
+  width 100%
 
 .about-rer-history
   background url('../img/backgrounds/section-5.jpg')
@@ -109,10 +113,11 @@
   backgroun-repeat no-repeat
   background-size cover
   bottom -320px
-  left 185px
+  left 178px
   padding 37px 65px
   position absolute
   width 562px
+  z-index 2
   
 .about-img-container
   display none
@@ -280,6 +285,9 @@
   font-size remify(15px)
   line-height 25px
   margin 15px 0px 0px 0px
+  
+.about-rer-content-img-modifier
+  display none
   
 @media screen and (max-width 780px)
   .about-container
@@ -486,6 +494,71 @@
     flex-direction column
     padding-left 40px
     padding-right 50px
-    
+
   .about-partner-mobile
     margin-top 40px
+
+@media screen and (min-width 1230px) and (max-width 1300px)
+  .about-rer-content-img
+    left 670px
+    right auto
+
+  .about-rer-img
+    width 530px
+
+@media screen and (min-width 1160px) and (max-width 1229px)
+  .about-rer-content-img
+    left 670px
+    right auto
+
+  .about-rer-img
+    width 460px
+
+@media screen and (min-width 1080px) and (max-width 1159px)
+  .about-rer-content-img
+    left 670px
+    right auto
+
+  .about-rer-img
+    width 385px
+
+@media screen and (min-width 1000px) and (max-width 1079px)
+  .about-rer-content-img
+    left 670px
+    right auto
+
+  .about-rer-img
+    width 310px
+
+@media screen and (min-width 950px) and (max-width 999px)
+  .about-rer-content-img
+    left 670px
+    right auto
+
+  .about-rer-img
+    width 250px
+
+@media screen and (min-width 871px) and (max-width 949px)
+  .about-rer-content-img
+    margin-top 40px
+    position initial
+    
+@media screen and (min-width 1380px) and (max-width 1400px)
+  .about-rer-img
+    width 580px
+    
+@media screen and (min-width 1500px)
+  .about-rer-content-img
+    display none
+
+  .about-rer-img
+    max-width 700px
+    width 100%
+
+  .about-rer-content-img-modifier
+    display block
+    left auto
+    position absolute
+    right 0
+    top 202px
+    z-index 1
