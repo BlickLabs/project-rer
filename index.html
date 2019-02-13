@@ -17,7 +17,7 @@
       function gtag_report_conversion(url) {
       var callback = function () {
         if (typeof(url) != 'undefined') {
-          window.location = url;
+          // window.location = url;
         }
       };
       gtag('event', 'conversion', {
@@ -1561,7 +1561,7 @@
             <label class="rer-font-opensans text-label-input" for="message">Mensaje</label>
             <textarea class="message message-mobile" name="candidatemessage" id="message" cols="30" rows="10" placeholder="Escribe aquí..." required></textarea>
             <div class="button-container">
-              <button class="section_eight-button rer-font-opensans">
+              <button class="section_eight-button rer-font-opensans" onclick="gtag_report_conversion()">
                 <span class="rer-font-opensans-light text-button-submit">Enviar</span>
                 <img src="img/icon-arrow-right.png" alt="enviar">
               </button>
