@@ -1,6 +1,33 @@
 <!DOCTYPE html>
 <html lang="es">
   <head>
+    <!-- Global site tag (gtag.js) - Google Ads: 765997822 -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=AW-765997822"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'AW-765997822');
+    </script>
+
+    <!-- Event snippet for Leads Formulario conversion page
+    In your html page, add the snippet and call gtag_report_conversion when someone clicks on the chosen link or button. -->
+    <script>
+      function gtag_report_conversion(url) {
+      var callback = function () {
+        if (typeof(url) != 'undefined') {
+          // window.location = url;
+        }
+      };
+      gtag('event', 'conversion', {
+          'send_to': 'AW-765997822/fTX1CK3W9ZMBEP7loO0C',
+          'event_callback': callback
+      });
+      return false;
+      }
+    </script>  
+
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     <meta name="description" content="En RER utilizamos las marcas #1 de paneles solares con 25 años de garantía. Únicamente trabajamos con productos líderes de la industria, con el fin de maximizar la duración de vida de la producción de energía. ">
