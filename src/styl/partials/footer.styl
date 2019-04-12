@@ -118,6 +118,19 @@
   &-icon
     height 18px
 
+.newSection-desktop
+    margin-bottom 8px
+
+.newSection-text
+  color #fff
+  display block
+  letter-spacing 1.5px
+  font-size remify(13px)
+  margin 0 0 10px 0
+
+.newSection-mobile
+  display none
+
 @media screen and (max-width 780px)
   .site-footer
     display flex
@@ -135,7 +148,8 @@
 
   .footer-container
     flex-direction column
-    max-height 255px
+    // max-height 255px
+    max-height 320px
     width 100%
     
   .footer_menu-column_one
@@ -218,6 +232,20 @@
     display none
     
   .rer-eu-link-mobile
+    display block
+
+  .newSection-desktop
+    display none
+
+  .newSection-text
+    color #fff
+    display block
+    letter-spacing 1.5px
+    font-size remify(11px)
+    margin 10px 0 0 0
+    text-align left
+
+  .newSection-mobile
     display block
     
 @media screen and (min-width 781px) and (max-width 1000px)
