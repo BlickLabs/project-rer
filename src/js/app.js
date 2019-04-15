@@ -39,6 +39,8 @@ $('form[name="candidate-form"]').validate({
   // required fields
   candidatename: 'required',
   candidateemail: 'required',
+  candidatecompany: 'required',
+  candidatecfe: 'required',
   candidatemessage: 'required',
   messages: {
    candidatename: "Por favor introduce tu Nombre.",
