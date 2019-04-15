@@ -9,3 +9,5 @@ _templates/
 .directory
 
 .idea
+
+.DS_Store
