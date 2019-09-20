@@ -1,6 +1,30 @@
-<nav class="site-navbar">
+<nav class="site-navbar
+            {% if section == 'plans-services' %}navbar-blue{% endif %}
+            {% if section == 'projects' %}navbar-strong-blue{% endif %}
+            {% if section == 'open-project' %}navbar-strong-blue{% endif %}
+            {% if section == 'municipio-canadaigua' %}navbar-strong-blue{% endif %}
+            {% if section == 'flagasa' %}navbar-strong-blue{% endif %}
+            {% if section == 'eva-green' %}navbar-strong-blue{% endif %}
+            {% if section == 'project-1' %}navbar-strong-blue{% endif %}
+            {% if section == 'project-2' %}navbar-strong-blue{% endif %}
+            {% if section == 'project-3' %}navbar-strong-blue{% endif %}
+            {% if section == 'project-4' %}navbar-strong-blue{% endif %}
+            {% if section == 'project-5' %}navbar-strong-blue{% endif %}
+            {% if section == 'project-6' %}navbar-strong-blue{% endif %}
+            {% if section == 'project-7' %}navbar-strong-blue{% endif %}
+            {% if section == 'project-8' %}navbar-strong-blue{% endif %}
+            {% if section == 'project-9' %}navbar-strong-blue{% endif %}
+            {% if section == 'project-10' %}navbar-strong-blue{% endif %}
+            {% if section == 'project-11' %}navbar-strong-blue{% endif %}
+            {% if section == 'project-12' %}navbar-strong-blue{% endif %}
+            {% if section == 'news' %}navbar-blue{% endif %}
+            {% if section == 'contact' %}navbar-strong-blue{% endif %}
+            {% if section == 'about' %}navbar-strong-blue{% endif %}">
   <div class="site-navbar__desktop-logo-container">
-    <a href="index.html"><img src="img/logo/rer_logo-color.png" alt="Logo RER"></a>
+    <a href="index.html">
+      {% if section == 'index' %}<img class="navbar-logo-mobile" src="img/logo/rer_logo-color.png" alt="Logo RER">{% endif %}
+      {% if section != 'index' %}<img class="navbar-logo-mobile" src="img/logo/rer_logo-white.png" alt="Logo RER">{% endif %}
+    </a>
   </div>
   <div class="site-navbar__menu-trigger">
     <span class="fa fa-bars"></span>
@@ -16,41 +40,135 @@
         </div>
         <span>Inicio</span>
       </a>
-      <a href="index.html" class="site-navbar__menu-link {% if section != 'index' %}active{% endif %}">
+      <a href="plans-services.html" class="site-navbar__menu-link {% if section == 'plans-services' %}active{% endif %}">
         <div class="nav_stroke-container">
           <div class="nav_stroke"></div>
         </div>
         <span>Planes y servicios</span>
       </a>
-      <a href="index.html" class="site-navbar__menu-link {% if section != 'index' %}active{% endif %}">
+      <a href="solar-benefits.html" class="site-navbar__menu-link {% if section == 'solar-benefits' %}active{% endif %}">
         <div class="nav_stroke-container">
           <div class="nav_stroke"></div>
         </div>
         <span>Beneficios solares</span>
       </a>
-      <a href="index.html" class="site-navbar__menu-link {% if section != 'index' %}active{% endif %}">
+      <a href="projects.html" class="site-navbar__menu-link 
+              {% if section == 'projects' %}active{% endif %}
+              {% if section == 'flagasa' %}active{% endif %}
+              {% if section == 'eva-green' %}active{% endif %}
+              {% if section == 'project-1' %}active{% endif %}
+              {% if section == 'project-2' %}active{% endif %}
+              {% if section == 'project-3' %}active{% endif %}
+              {% if section == 'project-4' %}active{% endif %}
+              {% if section == 'project-5' %}active{% endif %}
+              {% if section == 'project-6' %}active{% endif %}
+              {% if section == 'project-7' %}active{% endif %}
+              {% if section == 'project-8' %}active{% endif %}
+              {% if section == 'project-9' %}active{% endif %}
+              {% if section == 'project-10' %}active{% endif %}
+              {% if section == 'project-11' %}active{% endif %}
+              {% if section == 'project-12' %}active{% endif %}">
         <div class="nav_stroke-container">
           <div class="nav_stroke"></div>
         </div>
         <span>Proyectos</span>
       </a>
-      <a href="index.html" class="site-navbar__menu-link {% if section != 'index' %}active{% endif %}">
+      <a href="http://blog.rerenergygroup.com.mx/" class="site-navbar__menu-link {% if section == 'news' %}active{% endif %}">
         <div class="nav_stroke-container">
           <div class="nav_stroke"></div>
         </div>
         <span>Noticias</span>
       </a>
-      <a href="index.html" class="site-navbar__menu-link {% if section != 'index' %}active{% endif %}">
+      <a href="about.html" class="site-navbar__menu-link {% if section == 'about' %}active{% endif %}">
         <div class="nav_stroke-container">
           <div class="nav_stroke"></div>
         </div>
         <span>Quiénes somos</span>
       </a>
-      <a href="index.html" class="site-navbar__menu-link {% if section != 'index' %}active{% endif %}">
+      <a href="contact.html" class="site-navbar__menu-link {% if section == 'contact' %}active{% endif %}">
         <div class="nav_stroke-container">
           <div class="nav_stroke"></div>
         </div>
         <span>Contacto</span>
+      </a>
+    </div>
+  </div>
+  <div data-attribute="" class="navbar-hamburguer-visibility"  id="hamburgerMenu">
+    <div class="navbar-hamburguer" data-attribute="">
+      <div class="align-content-hamburguer" data-attribute="">
+        <div class="line-hamburguer-base line-hamburguer-lg" data-attribute=""></div>
+        <div class="line-hamburguer-base line-hamburguer-lg margin-vertical-4px" data-attribute=""></div>
+        <div class="line-hamburguer-base line-hamburguer-md" data-attribute=""></div>
+      </div>
+    </div>
+  </div>
+  <div class="hamburger-menu-container" id="menuContainer" data-attribute="">
+    <div class="hamburger-menu-header" data-attribute="">
+      <div class="" data-attribute="">
+        <a href="" data-attribute="">
+          <img class="hamburger-logo" src="img/logo/white-rer-logo.png" data-attribute="">
+        </a>
+      </div>
+      <div class="hamburger-close-container" id="hideHamburger">
+        <img class="hamburger-close" src="img/icons/close-menu.png">
+      </div>
+    </div>
+    <div class="hamburger-menu-body" data-attribute="">
+      <a data-attribute="" href="index.html" class="hamburger-menu-link {% if section == 'index' %}link-active{% endif %}">
+        <div class="hamburger-link-container">
+          <div class="hamburger-stroke-container">
+            <div class="hamburger-stroke"></div>
+          </div>
+          <span class="hamburger-text">Inicio</span>
+        </div>
+      </a>
+      <a data-attribute="" href="plans-services.html" class="hamburger-menu-link {% if section == 'plans-services' %}link-active{% endif %}">
+        <div class="hamburger-link-container">
+          <div class="hamburger-stroke-container">
+            <div class="hamburger-stroke"></div>
+          </div>
+          <span class="hamburger-text">Planes y servicios</span>
+        </div>
+      </a>
+      <a data-attribute="" href="solar-benefits.html" class="hamburger-menu-link {% if section == 'solar-benefits' %}link-active{% endif %}">
+        <div class="hamburger-link-container">
+          <div class="hamburger-stroke-container">
+            <div class="hamburger-stroke"></div>
+          </div>
+          <span class="hamburger-text">Beneficios solares</span>
+        </div>
+      </a>
+      <a data-attribute="" href="projects.html" class="hamburger-menu-link {% if section == 'projects' %}link-active{% endif %}">
+        <div class="hamburger-link-container">
+          <div class="hamburger-stroke-container">
+            <div class="hamburger-stroke"></div>
+          </div>
+          <span class="hamburger-text">Proyectos</span>
+        </div>
+      </a>
+      <a data-attribute="" href="http://blog.rerenergygroup.com.mx/" class="hamburger-menu-link {% if section == 'news' %}link-active{% endif %}">
+        <div class="hamburger-link-container">
+          <div class="hamburger-stroke-container">
+            <div class="hamburger-stroke"></div>
+          </div>
+          <span class="hamburger-text">Noticias</span>
+        </div>
+      </a>
+      <a data-attribute="" href="about.html" class="hamburger-menu-link {% if section == 'about' %}link-active{% endif %}">
+        <div class="hamburger-link-container">
+          <div class="hamburger-stroke-container">
+            <div class="hamburger-stroke"></div>
+          </div>
+          <span class="hamburger-text">Quiénes somos</span>
+        </div>
+      </a>
+      <a data-attribute="" href="contact.html" class="hamburger-menu-link {% if section == 'contact' %}link-active{% endif %}">
+        <div class="hamburger-link-container">
+          <div class="hamburger-stroke-container">
+            <div class="hamburger-stroke"></div>
+          </div>
+          <span class="hamburger-text">Contacto</span>
+        </div>
       </a>
     </div>
   </div>

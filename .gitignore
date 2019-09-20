@@ -5,3 +5,9 @@ dist/
 
 .publish/
 _templates/
+
+.directory
+
+.idea
+
+.DS_Store

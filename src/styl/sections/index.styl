@@ -3,11 +3,12 @@
 ------------------------------------*/
 .section-one
   //background-image url('../img/backgrounds/section-1b.png')
-  background-image url('../img/backgrounds/section-1.jpg')
+  background-image url('../img/backgrounds/Cover_RER.jpg')
   height 67.1vw
   display flex
   justify-content center
   align-items center
+  padding-bottom 200px
   z-index 1
   
 .section_one-container
@@ -17,7 +18,6 @@
 .section-one_title
   font-size remify(45px)
   color #fff
-  font-weight $thin
   line-height 1.33
   
   h1&
@@ -38,20 +38,25 @@
   padding 11px 35px
   line-height 2.23
   border 0
-  font-size remify(13px)
+  font-size remify(10px)
   letter-spacing 2.1px
   margin-top 40px
   cursor pointer
   transition 250ms box-shadow ease
   &:hover
-    box-shadow: 0px 2px 7px .6px rgba(0,0,0,0.2);
+    box-shadow: 0px 2px 7px .6px rgba(0,0,0,0.2)
+    
+.us-page-link-button
+  position absolute
+  right 40px
+  top: -110px
 
 /*------------------------------------
   second section
 ------------------------------------*/
 .relative-container
   position relative
-  top -200px
+  top -230px
   margin-bottom -707px
   z-index 2
 
@@ -59,14 +64,16 @@
   height 1223px
   background-image url('../img/backgrounds/section-2.png')
   background-size 100% 100%
-  padding-top 321px
+  margin-top -240px
+  padding-top 300px
+  position relative
 
 .section_two-title
   color #fff
   font-size remify(40px)
   text-align center
   margin-bottom 114px
-  font-weight $thin
+  margin-top 0px
   letter-spacing 1px
   
   span
@@ -77,34 +84,36 @@
   flex-wrap wrap
   justify-content center
   width 90%
-  max-width 819px;
+  max-width 700px
   center-block()
 
 .service
+  align-items center
   display flex
   flex-direction column-reverse
-  width 172px
-  margin-right 147px
-  margin-bottom 61px
+  width 152px
+  margin-right 120px
+  margin-bottom 30px
 
 .service-image
-  width 172px
+  width 150px
 
 .service-title
   color #fff
   text-transform uppercase
   text-align center
+  font-size remify(15px)
   height 58px
   letter-spacing 1.3px
   line-height 1.38
-  font-weight $thin
+  margin 10px 0 0 0
 
 /*------------------------------------
   third section
 ------------------------------------*/
 .section_three
   height 342px
-  // background-image url('../img/backgrounds/section-3.png')
+  //background-image url('../img/backgrounds/section-3.jpg')
   background-size cover
   background-position center
 
@@ -135,7 +144,6 @@
   .content-enlarge
     font-size 45px
   .content-blue
-    font-weight $thin
     color $rerblue-three
 
 /*------------------------------------
@@ -159,27 +167,39 @@
   display flex
   flex-wrap wrap
   justify-content space-between
-  max-width 844px
+  max-width 570px
   center-block()
 
 [class*='reason_']
-  width 408px
+  width 278px
   position relative
-  height 383px
+  height 253px
   background-size cover
   display flex
   flex-direction column
   justify-content flex-end
   align-items center
-  margin-bottom 24px
+  margin-bottom 13px
   overflow hidden
+
+.reason-translatey-one
+  transform translateY(160px)
+
+.reason-translatey-two
+  transform translateY(188px)
+
+.reason-translatey-three
+  transform translateY(188px)
+
+.reason-translatey-four
+  transform translateY(147px)
   
 .reason_
   &one
     background-image url('../img/reasons/reason-1.jpg')
     &:hover
       .reason-container
-        transform translateY(-13px)
+        transform translateY(-29px)
       .reason-blue_mask
         top 0
   
@@ -187,7 +207,7 @@
     background-image url('../img/reasons/reason-2.png')
     &:hover
       .reason-container
-        transform translateY(-13px)
+        transform translateY(0px)
       .reason-blue_mask
         top 0
   
@@ -195,7 +215,7 @@
     background-image url('../img/reasons/reason-3.jpg')
     &:hover
       .reason-container
-        transform translateY(-13px)
+        transform translateY(-5px)
       .reason-blue_mask
         top 0
   
@@ -203,17 +223,12 @@
     background-image url('../img/reasons/reason-4.jpg')
     &:hover
       .reason-container
-        transform translateY(-13px)
+        transform translateY(-40px)
       .reason-blue_mask
         top 0
 
 .reason-blue_mask
-  background linear-gradient(to top,
-    rgba(19,102,168, 1),
-    rgba(19,102,168, 0.95),
-    rgba(19,102,168, 0.4),
-    rgba(19,102,168, 0.1),
-    rgba(255,255,255,0))
+  background rgba(19,102,168, 0.85)
   width 100%
   height 100%
   position absolute
@@ -222,25 +237,34 @@
 
 .reason-container
   width 90%
-  transform translateY(71px)
   transition 300ms transform ease
   &:hover
     transform translateY(0)
   
 .reason-title
   color #fff
-  font-size remify(19px)
-  line-height 29px
+  font-size remify(12px)
+  line-height 17px
   text-transform uppercase
-  letter-spacing 3px
-  margin-bottom 16px
+  letter-spacing 2px
+  margin-bottom 10px
 
 .reason-description
   color #fff
   line-height 1.36
   letter-spacing .1px
-  font-size remify(14px)
-  width 300px
+  font-size remify(11px)
+  width 251px
+  
+.cels-link
+  color #fff
+  line-height 1.36
+  letter-spacing .1px
+  font-size remify(11px)
+  text-decoration underline
+  
+.cels-link:hover
+  color #2a97e6
 
 /*------------------------------------
   fifth section
@@ -280,6 +304,9 @@
   &:hover
     .hover-sector
       opacity 1
+      
+.sector-mobile
+  display none
 
 .hover-sector
   opacity 0
@@ -308,6 +335,92 @@
 
   img
     width 70px
+    
+/* -- Section modal -- */
+    
+.remodal
+  background-color rgba(21, 45, 62, .83)
+  height 90%
+  max-width 700px
+  
+.remodal-close
+  left auto
+  right 0px
+
+.sector-modifier-desktop
+  width: 630px
+  
+.sector-mask-modal
+  background-color rgba(21, 45, 62, .93)
+  bottom 0
+  left 0
+  position absolute
+  right 0
+  top 0
+  z-index 5
+    
+.sector-modal-container
+  bottom 0
+  left 0
+  padding 50px 30px
+  position absolute
+  right 0
+  top 0
+  
+.modal-sector-img
+  height 51px
+  width 51px
+  
+.modal-sector-title
+  color #fff
+  font-size remify(20px)
+  letter-spacing 1.6px
+  margin 25px 0px
+  text-align left
+  
+.sector-scrollbar
+  display block
+  height 284px
+  overflow auto
+  position relative
+  
+.modal-sector-description
+  color #fff
+  font-size remify(14px)
+  line-height 20px
+  letter-spacing 0.1px
+  margin 0
+  padding-right 10px
+  text-align left
+
+/*Section Arrows carousel*/
+  
+.sectors-arrows
+  align-items center
+  background-color #0068b3
+  border-radius 40px
+  cursor pointer
+  display flex
+  height 40px
+  justify-content center
+  position absolute
+  width 40px
+  
+.sectors-arrow-left
+  bottom -47px
+  left 71px
+  margin 0 auto
+  right 0
+  
+.sectors-arrow-right
+  bottom -47px
+  left 0
+  margin 0 auto
+  right 51px
+  
+.sectors-width
+  height 13px
+  width 15px
 
 .sector-content  
   height 50%
@@ -367,6 +480,10 @@
 .sector-image
   img
     width 100%
+    
+.section-sector-hide-desktop
+  display none
+  width 50%
 
 /*------------------------------------
   sixth section
@@ -382,54 +499,77 @@
   margin-top 0
   margin-bottom 103px
   text-align center
-  font-weight $thin
 
 .section_six-content
-  max-width 1118px
+  // max-width 1118px
+  max-width 1146px
   display flex
   flex-wrap wrap
-  justify-content space-between
+  // justify-content space-between
+  justify-content flex-start
   center-block()
   margin-bottom 62px
+
+.projects-home-link
+  margin 10px
 
 [class*="project_"]
   width 362px
   height 334px
   background-size cover
-  margin-bottom 20px
+  cursor pointer
+  // margin-bottom 20px
   display flex
   justify-content center
   align-items center
   position relative
 
 .project_
+  &canadaigua
+    background-image url('../img/projects/municipio-canadaigua.jpg')
+    &:hover
+      .project-blue_mask
+        opacity .67
+
+  &flagasa
+    background-image url('../img/projects/flagasa.jpg')
+    &:hover
+      .project-blue_mask
+        opacity .67
+
+  &eva-green
+    background-image url('../img/projects/eva-green.jpg')
+    &:hover
+      .project-blue_mask
+        opacity .67
+
   &1
-    background-image url('../img/projects/project-1.png')
+    background-image url('../img/projects/a-and-a.jpg')
     &:hover
       .project-blue_mask
         opacity .67
   &2
-    background-image url('../img/projects/project-2.png')
+    background-image url('../img/projects/heyco-metals.jpg')
     &:hover
       .project-blue_mask
         opacity .67 
   &3
-    background-image url('../img/projects/project-3.png')
+    background-image url('../img/projects/mexlam.jpg')
     &:hover
       .project-blue_mask
         opacity .67
   &4
-    background-image url('../img/projects/project-4.png')
+    background-image url('../img/projects/walworth.jpg')
     &:hover
       .project-blue_mask
         opacity .67
   &5
-    background-image url('../img/projects/project-5.png')
+    background-image url('../img/projects/turia.jpg')
     &:hover
       .project-blue_mask
         opacity .67
   &6
-    background-image url('../img/projects/project-6.png')
+    background-image url('../img/projects/american-power-net.jpg')
     &:hover
       .project-blue_mask
         opacity .67
@@ -467,7 +607,7 @@
   transition 200ms box-shadow ease
   margin-bottom 116px
   &:hover
-    box-shadow: 0px 2px 7px .6px rgba(0,0,0,0.17);
+    box-shadow: 0px 2px 7px .6px rgba(0,0,0,0.17)
 
 /*------------------------------------
   seventh section
@@ -485,7 +625,6 @@
   margin-top 0
   margin-bottom 86px
   text-align center
-  font-weight $thin
 
 .certifications
   max-width 661px
@@ -504,6 +643,8 @@
     width 169px
   &3
     width 96px
+  &4
+    width 90px
 
 /*------------------------------------
   eighth section
@@ -578,7 +719,7 @@
   height 145px
   border 1px solid #d4d4d4
   margin-bottom 23px
-  padding 11px 23px
+  padding 11px 10px
   font-size 15px
 
 textarea::placeholder
@@ -607,7 +748,13 @@ textarea::placeholder
     height 9.2px
   
   &:hover
-    box-shadow: 0px 2px 7px .6px rgba(0,0,0,0.17);
+    box-shadow: 0px 2px 7px .6px rgba(0,0,0,0.17)
+    
+label.error
+  font-family 'OpenSans'
+  font-size remify(14px)
+  font-weight 400
+  padding-bottom 30px
 
 /*------------------------------------
   media queries
@@ -621,21 +768,12 @@ textarea::placeholder
   .sector
     margin-bottom 50px
 
-@media only screen and (max-width 1085px)
   .section_six-content
+    max-width 764px
 
-    max-width 950px
-  
+@media only screen and (max-width 1085px)
   .section_six-button
     margin-bottom 80px
-  
-  [class*='project_']
-    width 300px
-    height 277px
-
-@media only screen and (max-width 950px)
-  .section_six-content
-    width 621px
 
 @media only screen and (max-width 899px)
   .service:nth-child(even)
@@ -644,3 +782,447 @@ textarea::placeholder
 @media only screen and (min-width 900px)
   .service:nth-child(3), .service:nth-child(6)
     margin-right 0
+
+@media screen and (max-width 780px)
+  .section-one
+    align-items flex-start
+    height 600px
+    
+  .section_one-container
+    margin-top 105px
+    width 300px
+    
+  .section-one_title
+    font-size remify(28px)
+    line-height 23px
+    margin 0 9px !important
+    
+  .section-one_content
+    font-size remify(18px)
+    margin 29px 20px 29px 20px
+    width auto
+    
+  .rer-button
+    height 33px
+    margin-top 0px
+    padding 0px
+    width 159px
+    
+  .relative-container
+    top -200px
+    
+  .section_two
+    position relative
+    background-size cover
+    height 600px
+    padding-top 150px
+    
+  .section_two-title
+    font-size remify(24px)
+    margin-bottom 64px
+    
+  .section_two-carousel
+    padding 0px 60px
+    
+  .section_two-carousel.slick-slide
+    margin-top 20px
+    margin-bottom 20px
+  
+  .half-circle-
+    &prev, &next
+      bottom 83px
+      position absolute
+      width 28px
+      
+  .half-circle-prev
+    left 0px
+
+  .half-circle-next
+    right 0px
+    
+  .service
+    margin-right 0px
+    margin-bottom 0px
+    
+  .section-two-content.slick-center
+    transform scale(1.5)
+    margin 17px -40px 35px -40px
+    outline 0
+    z-index 1
+    opacity 1 !important
+    
+  .service-title.slick-slide
+    display none
+    
+  .section-two-content.slick-slide
+    margin-top 10px
+    padding-top 10px
+    opacity 0.3
+    
+  .service-image
+    height 100px
+    width 100px
+    
+  .service-title
+    font-size remify(9px)
+    height 25px
+    margin-top 5px
+    margin-bottom 0px
+    
+  .slick-slide
+    .service-title
+      opacity 0
+      
+  .slick-current
+    .service-title
+      opacity 1
+
+  .service-width
+    width auto !important
+    
+  .section_three
+    height 279px
+    
+  .section_three-content
+    font-size remify(26px)
+    width 81%
+    padding-left 21px
+    
+  .section_three-content
+    .content-enlarge
+      font-size remify(29px)
+      
+  .section_four
+    padding-top 50px
+    
+  .section_four-title
+    font-size remify(24px)
+    margin-bottom 45px
+    
+  .section_four-content
+    position relative
+    
+  [class*='reason_']
+    height 267px
+    
+  [class*='reason_'].slick-center
+    height 222px
+    filter grayscale(0%) !important
+    transform scale(1.5)
+    z-index 1
+    
+  [class*='reason_'].slick-slide
+    filter grayscale(100%)
+    margin-top 10px
+    outline 0
+    
+  .why-rer-carousel-arrows
+    align-items center
+    background-color #0068b3
+    border-radius 50px
+    display flex
+    height 44px
+    justify-content center
+    position absolute
+    width 44px
+    
+  .why-rer-arrow-left
+    bottom -50px
+    left 56px
+    margin 0 auto
+    right 0
+    
+  .why-rer-arrow-right
+    bottom -50px
+    left 0
+    margin 0 auto
+    right 36px
+    
+  .why-rer-arrow-width-14px
+    width 14px
+    
+  .reason-container
+    transform translateY(0)
+    
+  .section_five
+    padding-top 70px
+    
+  .section_five-container
+    width 100%
+    justify-content center
+    
+  .section_five-title
+    font-size remify(24px)
+    margin-bottom 50px
+    
+  .sector
+    display none
+    
+  .remodal-wrapper
+    padding 10px
+    
+  .remodal
+    background-color rgba(21, 45, 62, .83)
+    height auto
+    max-width 365px
+    
+  .remodal-close
+    left auto
+    right 0px
+    
+  .sector-mask-modal
+    background-color rgba(21, 45, 62, .97)
+    
+  .sector-modal-container
+    padding 30px
+    
+  .sector-mobile
+    height 390px
+    width 295px
+    display flex
+    flex-direction column-reverse
+    align-items flex-end
+    background-color #fff
+    position relative
+    
+  .modal-sector-title
+    font-size remify(17px)
+    letter-spacing 1.6px
+    margin 25px 0px
+    
+  .sector-scrollbar
+    height 195px
+    
+  .modal-sector-description
+    font-size remify(11px)
+    line-height 16px
+    letter-spacing 0.1px
+    
+  .sectors-arrows
+    height 30px
+    width 30px
+    
+  .sectors-arrow-left
+    bottom -15px
+    left 56px
+    margin 0 auto
+    right 0
+    
+  .sectors-arrow-right
+    bottom -15px
+    left 0
+    margin 0 auto
+    right 36px
+    z-index 1
+    
+  .sectors-width
+    height 14px
+    width 14px
+    
+  .section-sector-hide-desktop
+    display block
+    
+  .section-sector-mobile
+    align-items center
+    display flex
+    cursor pointer
+    flex-direction column
+    
+  .margin-top-35px-mobile
+    margin-top 35px
+    
+  .sector-image-size-mobile
+    width 46px
+    
+  .text-sector-mobile
+    color #fff
+    text-transform uppercase
+    
+  .section_six
+    padding-top 50px
+    
+  .section_six-title
+    font-size remify(24px)
+    margin-bottom 50px
+    
+  .section_six-content
+    width 100%
+    
+  .projects-home-link
+    margin 0
+    padding 10px
+    width: 50%
+    
+  [class*="project_"]
+    height 161px
+    margin-bottom 6px
+    width 100%
+    
+  .contact_header
+    padding-left 42px
+    padding-right 42px
+    
+  .section_six-button
+    height 33px
+    padding 0px
+    width 111px
+    
+  .section_seven
+    height 520px
+    padding-top 25px
+    
+  .section_seven-title
+    font-size remify(24px)
+    margin-bottom 44px
+    
+  .certifications
+    width 80%
+    
+  .certification_
+    &2
+      margin 0px 15px
+    &4
+      margin-left 15px
+    
+  .contact-title
+    font-size remify(20px)
+  
+  .contact-description
+    font-size remify(13px)
+    
+  .contact_body-container
+    flex-direction column
+
+  .contact_body-column_
+    &one, &two
+      max-width 100%
+      margin-right 0px
+      
+  .text-label-input.rer-font-opensans
+    font-size remify(15px)
+    margin-bottom 0px
+
+  .contact-field
+    max-width 100%
+    min-width 100%
+
+  .message
+    width 100%
+    height 43px
+
+  .contact-field-mobile.contact-field
+    border-top 0px
+    border-right 0px
+    border-left 0px
+    background-color transparent
+    
+  .message-mobile.message
+    border-top 0px
+    border-right 0px
+    border-left 0px
+    background-color transparent
+    
+  .section_two-content
+    flex-wrap nowrap
+    
+  .section_eight-button
+    height 34px
+    padding 0px
+    width 122px
+    
+  .text-button-submit.rer-font-opensans-light
+    font-size remify(13px)
+    
+  .reason_
+    &one
+      background-image url('../img/reasons/reason-1.jpg')
+      &:hover
+        .reason-container
+          transform translateY(0px)
+      .reason-blue_mask
+        top 0
+    
+    &two
+      background-image url('../img/reasons/reason-2.png')
+      &:hover
+        .reason-container
+          transform translateY(0px)
+      .reason-blue_mask
+        top 0
+    
+    &three
+      background-image url('../img/reasons/reason-3.jpg')
+      &:hover
+        .reason-container
+          transform translateY(0px)
+      .reason-blue_mask
+        top 0
+    
+    &four
+      background-image url('../img/reasons/reason-4.jpg')
+      &:hover
+        .reason-container
+          transform translateY(0px)
+      .reason-blue_mask
+        top 0
+        
+  .reason-blue_mask
+    background rgba(19,102,168, 0.85)
+          
+  .reason-container
+    padding 40px 20px 0px 20px
+    width 100%
+          
+  .reason-title
+    font-size remify(8px)
+    line-height 10px
+    margin-bottom 0
+    
+  .reason-description
+    font-size remify(8px)
+    width auto
+  
+  .us-page-link-button
+    margin-top 30px
+    position initial
+
+@media screen and (min-width 1450px)
+  .section-one
+    height 60.1vw
+    
+  .section_two
+    margin-top -323px
+    
+@media screen and (min-width 877px) and (max-width 1110px)
+  .section-one
+    height 90.1vw
+    
+@media screen and (min-width 781px) and (max-width 899px)
+  .section_two-content
+    max-width 500px
+    
+@media screen and (max-width 320px)
+    .sector-mobile
+      max-width 230px
+      width auto
+
+@media screen and (min-width 321px) and (max-width 360px)
+  .sector-mobile
+    max-width 272px
+    width auto
+    
+@media screen and (min-width 375px) and (max-width 420px)
+  .section_two-carousel
+    padding 0px 88px
+    
+@media screen and (min-width 568px) and (max-width 639px)
+  .section_two-carousel
+    padding 0px 185px
+    
+@media screen and (min-width 640px) and (max-width 667px)
+  .section_two-carousel
+    padding 0px 220px
+    
+@media screen and (min-width 700px) and (max-width 736px)
+  .section_two-carousel
+    padding 0px 220px

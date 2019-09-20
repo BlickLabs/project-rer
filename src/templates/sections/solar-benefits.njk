@@ -1,0 +1,218 @@
+{% extends "partials/base.njk" %}
+
+{% block meta %}
+{% endblock %}
+
+{% block content %}
+  <div class="solar-benefits-container">
+    <div class="solar-benefits">
+      <h1 class="solar-benefits-title rer-font-roboto-regular"><span class="rer-font-roboto-bold">Beneficios</span> solares</h1>
+      <p class="solar-benefits-description rer-font-opensans">
+        México está clasificado como uno de los países con <span class="rer-font-opensans-bold">mayor potencial de energía solar</span> a nivel mundial.
+      </p>
+      <a class="button-link" href="#how-it-work">
+        <button class="solar-benefits-button rer-font-opensans">¿Cómo funciona?</button>
+      </a>
+    </div>
+    <a id="how-it-work"></a>
+    <div class="solar-benefits-why">
+      <h1 class="why-title rer-font-roboto-regular">¿Por qué <span class="rer-font-roboto-bold">México</span>?</h1>
+      <p class="why-descripcion rer-font-opensans">
+        La energía solar es una <span class=" rer-font-opensans-bold">excelente oportunidad de inversión</span> en este país, donde nuestros clientes pueden lograr ahorros significativos sobre las tarifas actuales de la Comisión Federal de Electricidad (CFE) y generar un flujo de ingresos adicional gracias a varios factores:
+      </p>
+      <div class="why-container">
+        <div class="why-content">
+          <div class="why-image-container">
+            <img class="why-image rer-font-opensans-bold" src="img/why-mx/why-mx-1.png">
+          </div>
+          <p class="why-content-description rer-font-opensans-bold">Intensa irradiación solar</p>
+          <div class="why-content-hover">
+            <div class="why-line-container-hover">
+              <div class="why-line-hover">
+                <div class="why-triangle-hover"></div>
+              </div>
+            </div>
+            <p class="why-description-hover">México es el 3er país con más potencial solar a nivel mundial  (EPIA 2010). Contamos con casi el doble de irradiación promedio que Alemania.</p>
+          </div>
+        </div>
+        <div class="why-content">
+          <div class="why-image-container">
+            <img class="why-image" src="img/why-mx/why-mx-2.png">
+          </div>
+          <p class="why-content-description rer-font-opensans-bold">Altas tarifas de<br>electricidad de CFE</p>
+          <div class="why-content-hover">
+            <div class="why-line-container-hover">
+              <div class="why-line-hover">
+                <div class="why-triangle-hover"></div>
+              </div>
+            </div>
+            <p class="why-description-hover">Las tarifas eléctricas en promedio han incrementado en los últimos 16 años  a un ritmo de más del doble de la inflación de México.</p>
+          </div>
+        </div>
+        <div class="why-content">
+          <div class="why-image-container">
+            <img class="why-image" src="img/why-mx/why-mx-3.png">
+          </div>
+          <p class="why-content-description rer-font-opensans-bold">Depreciación acelerada del<br>100% en el primer año</p>
+          <div class="why-content-hover">
+            <div class="why-line-container-hover">
+              <div class="why-line-hover">
+                <div class="why-triangle-hover"></div>
+              </div>
+            </div>
+            <p class="why-description-hover">El artículo 34, XIII de la LISR menciona que los proyectos de energía renovable recibirán beneficios de deducción acelerada del 100% de los costos del sistema en el primer año.</p>
+          </div>
+        </div>
+        <div class="why-content">
+          <div class="why-image-container">
+            <img class="why-image" src="img/why-mx/why-mx-4.1.png">
+          </div>
+          <p class="why-content-description rer-font-opensans-bold">Certificados de<br>Energías Limpias (CEL)</p>
+          <div class="why-content-hover">
+            <div class="why-line-container-hover">
+              <div class="why-line-hover">
+                <div class="why-triangle-hover"></div>
+              </div>
+            </div>
+            <p class="why-description-hover">Los Certificados de Energías Limpias son un incentivo económico adicional, bonos que tienen un precio y se venden a través de subastas o en el mercado eléctrico, por individuos calificados que generen energías “limpias.”</p>
+          </div>
+        </div>
+      </div>
+      <!-- Sección Por qué México Carrusel -->
+      <div class="why-container-carousel">
+        <div class="why-content">
+          <div class="why-content-mask"></div>
+          <div class="why-block-info">
+            <div class="why-image-container">
+              <img class="why-image rer-font-opensans-bold" src="img/why-mx/why-mx-1.png">
+            </div>
+            <p class="why-content-description rer-font-opensans-bold">Intensa irradiación solar</p>
+            <div class="why-layer-info" id="why-layer-info">
+              <h1 class="why-layer-title rer-font-opensans-bold">Intensa irradiación solar</h1>
+              <p class="why-layer-description"><!--Vive oculto-->
+                México es el 3er país con más potencial solar a nivel mundial  (EPIA 2010). Contamos con casi el doble de irradiación promedio que Alemania.
+              </p>
+            </div>
+          </div>
+          <div class="read-more-container">
+            <img class="read-more-triangle" src="img/utils/read-triangle.png">
+            <button class="read-more-button rer-font-opensans" onclick="readMore(this)">Leer más</button>
+          </div>
+        </div>
+        <div class="why-content">
+          <div class="why-content-mask"></div>
+          <div class="why-block-info">
+            <div class="why-image-container">
+              <img class="why-image" src="img/why-mx/why-mx-2.png">
+            </div>
+            <p class="why-content-description rer-font-opensans-bold">Altas tarifas de<br>electricidad de CFE</p>
+            <div class="why-layer-info" id="why-layer-info">
+              <h1 class="why-layer-title rer-font-opensans-bold">Altas tarifas de<br>electricidad de CFE</h1>
+              <p class="why-layer-description">
+                Las tarifas eléctricas en promedio han incrementado en los últimos 16 años  a un ritmo de más del doble de la inflación de México.
+              </p>
+            </div>
+          </div>
+          <div class="read-more-container">
+            <img class="read-more-triangle" src="img/utils/read-triangle.png">
+            <button class="read-more-button rer-font-opensans" onclick="readMore(this)">Leer más</button>
+          </div>
+        </div>
+        <div class="why-content">
+          <div class="why-content-mask"></div>
+          <div class="why-block-info">
+            <div class="why-image-container">
+              <img class="why-image" src="img/why-mx/why-mx-3.png">
+            </div>
+            <p class="why-content-description rer-font-opensans-bold">Depreciación acelerada del<br>100% en el primer año</p>
+            <div class="why-layer-info" id="why-layer-info">
+              <h1 class="why-layer-title rer-font-opensans-bold">Depreciación acelerada del<br>100% en el primer año</h1>
+              <p class="why-layer-description">
+                El artículo 34, XIII de la LISR menciona que los proyectos de energía renovable recibirán beneficios de deducción acelerada del 100% de los costos del sistema en el primer año.
+              </p>
+            </div>
+          </div>
+          <div class="read-more-container">
+            <img class="read-more-triangle" src="img/utils/read-triangle.png">
+            <button class="read-more-button rer-font-opensans" onclick="readMore(this)">Leer más</button>
+          </div>
+        </div>
+        <div class="why-content">
+          <div class="why-content-mask"></div>
+          <div class="why-block-info">
+            <div class="why-image-container">
+              <img class="why-image" src="img/why-mx/why-mx-4.1.png">
+            </div>
+            <p class="why-content-description rer-font-opensans-bold">Certificados de<br>Energías Limpias (CEL)</p>
+            <div class="why-layer-info" id="why-layer-info">
+              <h1 class="why-layer-title rer-font-opensans-bold">Certificados de<br>Energías Limpias (CEL)</h1>
+              <p class="why-layer-description">
+                Los Certificados de Energías Limpias son un incentivo económico adicional, bonos que tienen un precio y se venden a través de subastas o en el mercado eléctrico, por individuos calificados que generen energías “limpias.”
+              </p>
+            </div>
+          </div>
+          <div class="read-more-container">
+            <img class="read-more-triangle" src="img/utils/read-triangle.png">
+            <button class="read-more-button rer-font-opensans" onclick="readMore(this)">Leer más</button>
+          </div>
+        </div>
+      </div>
+      <!-- Fin Sección Por qué México Carrusel -->
+    </div>
+    <div class="generate-image-container-mobile"></div>
+    <div class="solar-benefits-generate">
+      <h2 class="generate-title rer-font-roboto-bold">Genera ingresos  en tu<br>espacio libre con energía solar</h2>
+      <h2 class="generate-title-mobile rer-font-roboto-bold">Genera ingresos<br>en tu espacio libre con<br>energía solar</h2>
+      <div class="generate-title-underline"></div>
+      <p class="generate-description rer-font-opensans">
+        La energía solar brinda múltiples beneficios, ahorros significativos, mejor calidad de energía, fomenta una cultura de responsabilidad social, contribuye significativamente en el ambiente y gracias a los incentivos del gobierno ahora es posible generar ingresos. <span class="rer-font-opensans-bold">En RER trabajamos con expertos para que nuestros clientes aprovechen los incentivos disponibles por el gobierno como son los Certificados de Energías Limpias.</span>
+      </p>
+      <div class="generate-image-container">
+        <img class="generate-image" src="img/backgrounds/solar-benefits-m.png">
+      </div>
+    </div>
+    <div class="solar-benefits-how">
+      <div class="solar-bulb-container">
+        <img class="solar-bulb-line" src="img/utils/light-bulb-line.png">
+        <img class="solar-bulb-img" src="img/utils/light-bulb.png">
+      </div>
+      <div class="panel-gray">
+        <div class="panel-image-container">
+          <img class="panel-image" src="img/utils/solar-benefits-5.jpg">
+        </div>
+      </div>
+      <div class="how-container">
+        <div class="how-content">
+          <div class="how-title-container">
+            <h2 class="how-title rer-font-roboto-regular"><span class="rer-font-roboto-bold">¿Cómo funcionan los</span> certificados de energías limpias?</h2>
+            <div class="bulb-container-desktop">
+              <img class="bulb-img-desktop" src="img/utils/light-bulb.png">
+            </div>
+          </div>
+          <div class="how-info-section">
+            <div class="how-info-line"></div>
+            <h3 class="how-info-title rer-font-opensans-bold">Comprador</h3>
+            <p class="how-info-description rer-font-opensans">
+              La nueva ley que entra en vigor en el 2018 exige a ciertas industrias contaminantes cumplir con un 5% de energía renovable, de lo contrario deben comprar CEL.
+            </p>
+          </div>
+          <div>
+            <h3 class="how-info-title rer-font-opensans-bold">Vendedor</h3>
+            <p class="how-info-description rer-font-opensans">
+              Cualquier usuario calificado conectado a la red de CFE que decida instalar energía renovable puede vender certificados CEL, equivalentes a la producción de energía limpia de su sistema. Únicamente requieren instalar un equipo contador de CEL.
+            </p>
+          </div>
+          <div>
+            <h3 class="how-info-title rer-font-opensans-bold">Oferta y demanda</h3>
+            <p class="how-info-description rer-font-opensans">
+              La ley estipula que el porcentaje requerido por las empresas contaminantes incrementará con el paso de los años hasta cumplir las metas gubernamentales de reducción de emisiones de gases de invernadero. Hoy en día requieren CEL empresas como CFE, PEMEX y algunas mineras, pero la ley también estipula que con el paso del tiempo también incrementarán las industrias que tengan este requisito. El riesgo latente existe para el sector industrial en general.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="panel-image-container">
+      <img class="panel-image-footer" src="img/utils/solar-benefits-5.jpg">
+    </div>
+  </div>
+{% endblock %}

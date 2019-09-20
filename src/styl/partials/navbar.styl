@@ -7,11 +7,17 @@
   top 0
   width 100%
   z-index 12
-  padding 0 60px 0 20px
+  padding 0 40px 0 20px
   transition .3s background ease
 
   & + main
     padding-top 0 // Change
+    
+.navbar-strong-blue
+  background-color #142d3f
+  
+.navbar-blue
+  background-color #106198
     
 .nav-transparent-bg
   background transparent
@@ -45,7 +51,7 @@
 
 .site-navbar__desktop-logo-container
   img
-    width remify(216) // Change
+    width remify(176) // Change
 
 .site-navbar__menu-container
   flex-grow 1
@@ -78,22 +84,19 @@
   text-transform uppercase
   letter-spacing 1.4px
   cursor pointer
-  font-weight $thin
   margin-right 30px
 
   &.active
-    font-family 'OpenSans-Bold'
+    font-family 'OpenSans'
+    font-weight 700
     
   &:hover, &.active
     .nav_stroke
       height 100%
       background-color #fff
-    
-
 
 .site-navbar__menu-link:last-child
   margin-right 0
-  
 
 @media screen and (max-width: 876px) // Change
   .site-navbar
@@ -147,3 +150,126 @@
     display block
     text-align left
     flex-basis 100%
+    
+  .navbar-hamburguer-visibilit
+    display none
+    
+@media screen and (max-width 876px)
+  .site-navbar__desktop-logo-container
+    .navbar-logo-mobile
+      height auto
+      width 100px
+      
+  .navbar-hamburguer-visibilit
+    display block
+      
+  .navbar-hamburguer
+    width 33px
+    height 33px
+    border-radius 50%
+    background-color #235ba8
+    cursor pointer
+    display flex
+    justify-content center
+    
+  .align-content-hamburguer
+    display flex
+    flex-direction column
+    justify-content center
+    
+  .line-hamburguer-base
+    height 1px
+    background-color #fff
+
+  .line-hamburguer-lg
+    width: 15px
+    
+  .line-hamburguer-md
+    width 7.5px
+    
+  .margin-vertical-4px
+    margin 4px 0px
+    
+/*HAMBURGER*/
+
+.hamburger-menu-container
+  display none
+
+@media screen and (max-width 876px)
+  .hamburger-menu-container
+    background-color #235ba8
+    display inline
+    left 0
+    padding-bottom 50px
+    position fixed
+    top 0
+    width 0%
+    z-index 13
+    bottom 0
+    overflow scroll
+    -webkit-transition width 0.5s
+    transition width 0.5s
+    
+  .hamburger-menu-header
+    align-items center
+    display flex
+    flex-direction row
+    justify-content space-between
+    padding 22px 36px 50px 36px
+    
+  .hamburger-logo
+    height 33px
+    width 102px
+    
+  .hamburger-close-container
+    cursor pointer
+    
+  .hamburger-close
+    height 16px
+    width 16px
+    
+  .hamburger-link-container
+    align-items center
+    display flex
+    flex-direction row
+    margin-bottom 30px
+    
+  .hamburger-stroke-container
+    height 1px
+    width 23px
+    margin-right 15px
+    transition .3s height ease
+
+  .hamburger-stroke
+    height 1px
+    width 50%
+    background-color #235ba8
+    transition 300ms width, color ease
+
+  .hamburger-menu-link
+    color #fff
+    cursor pointer
+    font-size remify(12)
+    letter-spacing 1.4px
+    text-transform uppercase
+
+    &.link-active
+      font-family 'OpenSans'
+      font-weight 800
+      
+    &:hover, &.link-active
+      .hamburger-stroke
+        width 100%
+        background-color #fff
+        
+  .hamburger-text
+    padding 10px 0
+        
+@media screen and (max-width 1117px)
+  .site-navbar__menu-link
+    font-size remify(11px)
+    
+  .site-navbar__desktop-logo-container
+    img
+      width 8rem
+  

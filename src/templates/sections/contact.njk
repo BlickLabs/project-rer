@@ -1,0 +1,64 @@
+{% extends "partials/base.njk" %}
+
+{% block meta %}
+{% endblock %}
+
+{% block content %}
+  <div class="contact-container">
+    <h1 class="contact-tite rer-font-roboto-regular">Contacto</h1>
+    <div class="contact-content">
+      <form class="contact-form" name="contact-form" method="post" action="http://integrations.blick.mx/rer/email/">
+        <div class="contact-form-content">
+          <div class="contact-input-content margin-right-59px">
+            <label class="contact-input-label rer-font-roboto-medium label-required-mobile" for="contact-name">Nombre</label>
+            <input class="contact-input rer-font-roboto-medium" type="text" name="contactname" id="contact-name" required>
+          </div>
+          <div class="contact-input-content">
+            <label class="contact-input-label rer-font-roboto-medium label-required-mobile" for="contact-last-name">Apellidos</label>
+            <input class="contact-input rer-font-roboto-medium" type="text" name="contactlastname" id="contact-last-name" required>
+          </div>
+        </div>
+        <div class="contact-form-content">
+          <div class="contact-input-content margin-right-59px">
+            <label class="contact-input-label rer-font-roboto-medium label-required-mobile" for="contact-email">Correo electrónico Teléfono/</label>
+            <input class="contact-input rer-font-roboto-medium" type="text" name="contactemail" id="contact-email" required>
+          </div>
+          <div class="contact-input-content">
+            <label class="contact-input-label rer-font-roboto-medium" for="contact-company">Compañía / Organización</label>
+            <input class="contact-input rer-font-roboto-medium" type="text" name="contactcompany" id="contact-company" required>
+          </div>
+        </div>
+        <div class="contact-input-content">
+          <label class="contact-input-label rer-font-roboto-medium" for="contact-message">Mensaje</label>
+          <textarea class="contact-text-area rer-font-roboto-medium" placeholder="Escribe aquí" type="text" name="contactmessage" id="contact-message" required></textarea>
+        </div>
+        <div class="contact-submit-container">
+          <input class="contact-submit rer-font-opensans" type="submit" value="Enviar" name="" onclick="gtag_report_conversion()">
+        </div>
+      </form>
+      <div class="contact-data-content">
+        <p class="contact-data-description rer-font-opensans">Déjanos tus datos para saber si tu empresa <span class="rer-font-opensans-bold">es candidato</span> para alguno de nuestros servicios.</p>
+        <p class="contact-data-description rer-font-opensans" style="margin: 8px 0;"><span class="rer-font-opensans-bold">Teléfono: </span>+52 55 2922 7814</p>
+        <p class="contact-data-description rer-font-opensans"><span class="rer-font-opensans-bold">Corporativo: </span>Polanco Ciudad de México</p>
+        <a href="index.html#dejar-datos">
+          <button class="contact-data-button rer-font-opensans">Dejar mis datos</button>
+        </a>
+      </div>
+    </div>
+    <div class="sites-container">
+      <div class="sites-horizontal-center">
+        <div class="sites-content">
+          <a class="sites-link margin-bottom-9px-mobile" href="">
+            <img class="sites-icon" src="img/icons/fb-icon.png">
+            <p class="sites-text-link rer-font-opensans">Rersolar</p>
+          </a>
+          <a class="sites-link" href="">
+            <img class="sites-icon" src="img/icons/in-icon.png">
+            <p class="sites-text-link rer-font-opensans">Rersp</p>
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="contact-background-bottom"></div>
+  </div>
+{% endblock %}
